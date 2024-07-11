@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qWPN-k_SEUKQa7pQzkP4uA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/bank?name=%5B%22like%22%2C%22%25State+Bank+of+Hyderbad%25%22%5D" CVScreenId="44e211fb-50c6-47d0-b57b-9d709b7bd9ce" CvElementArea="699, 278, 539, 35" CvType="InputBox" DesignTimeRectangle="702, 428, 109, 29" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='BUTTON' visibleinnertext='Edit Full Form' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' visibleinnertext='Edit Full Form' type='' class='btn btn-secondary btn-sm ' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Edit Full Form &amp;#x9;&amp;#x9;&amp;#x9;' check:text='Edit Full Form' /&gt;" Guid="a0661f3f-caca-4336-9660-953d1d9d679e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bank' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2b070f299b76aec5b41447806c14029d.png" xmlns="">0GgyxChkkuEqMB3kxNolXwQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

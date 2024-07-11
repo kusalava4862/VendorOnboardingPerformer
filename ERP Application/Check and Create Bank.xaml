@@ -1,0 +1,263 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Check_and_Create_Bank" this:Check_and_Create_Bank.in_BankName="State Bank of Hyderbad" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_BankName" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1794,2500</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Check_and_Create_Bank_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Check_and_Create_Bank" sap:VirtualizedContainerService.HintSize="1678,2435" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Bank" sap:VirtualizedContainerService.HintSize="1616,2347" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0307513c-f105-4271-91ce-2070b29588c3" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1582,2107" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'SearchBank'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1520,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[in_BankName + &quot;[k(Enter)]&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/bank" CVScreenId="092be425-874b-41d2-8edf-92afe5eacbd1" ContentHash="E834L0IG70ybOGJsL0Z6Mg" CvElementArea="563, 269, 144, 32" CvType="InputBox" DesignTimeRectangle="565, 272, 140, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='page-List/Bank/List' tag='INPUT' type='text' placeholder='ID' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-List/Bank/List' tag='INPUT' type='text' placeholder='ID' class='input-with-feedback form-control input-xs' aaname='' /&gt;" Guid="7eddf0a2-b024-4b13-b4cc-2976ac4432b0" InformativeScreenshot="74579cdc04f0c9b8c48ae620ba71c702.png" Reference="F5Zsp2T990mpxSexIPd5BA/wIiuVNWEtkaKl3gVZ3Phhw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bank' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NCheckState DisplayName="Check App State 'Create a Bank'" sap:VirtualizedContainerService.HintSize="1520,1736" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="0307513c-f105-4271-91ce-2070b29588c3" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1016,1496" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add Bank'" sap:VirtualizedContainerService.HintSize="954,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0307513c-f105-4271-91ce-2070b29588c3" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/bank" CVScreenId="4d8c269c-119d-4135-84bc-08456c53a71e" ContentHash="rFPuAf7TmkW1EMNTy0LB4w" CvElementArea="1497, 208, 103, 32" CvTextArea="1522, 217, 69, 14" CvTextArgument="Add Bank" CvType="Button" DesignTimeRectangle="1524, 218, 66, 14" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='dd Bank' parentid='page-List/Bank/List' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dd Bank' parentid='page-List/Bank/List' tag='SPAN' type='' class='' check:innerText='Add Bank' /&gt;" Guid="0e70c809-4af0-4921-9bfe-9bb20aee1c69" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAASCAYAAADmMahlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOUSURBVFhH7Ze/auNAEMbvLfwkAj+AyQOcIIXBTUgRg+EwV5xJEZziCCmCq5grghsjAgalMLriwIYDuQjIhZGLgAwGpQioMKhIIUjx3YxW/yXjyEl1eOGDaGd3Zve3s7POl0qlgoPyOoDZogOYLdoCpoZ6q4lmo1ZgK5IE+bSJk69SgS2U8Fk/KrKxgphJvTt+Ge1ah1AxmGsDHqi9GrgqsufUhe4C7qxbYAulwCKX1n2RjSXsueaaGDSKxu+rXesQKgTTmxOWtQWb8Bg3eXtenwcmaZfO+jDJL5YDSKmxH9HeYGgxbzyxDnW9bVE1dEYGrBcX7osF7foqD6baRH9qwt54cJ91DM7U0mBY3Rk71tGN+ij2UIf57MJzHViPKjqJa9Ec0roeFXTOVRg8ZmPDGHVQi+Zn40hiL0ta42nYVwBGujNpmg31uAL5wQbeKJWryTGSWCxc2DMN6tiA/erBI5gxmDqUFWWd58CcqlCnFlweUxZMlTJxQ26W/eBwMrFHE1j8uYnB+XaK5bo29LGKycLx49oPcuA3GUdCc2SR3YV+ma6PGTASBkuatVYh8/exSojYSWJS0GeP63FfQ4NDfREYv0bxNYznSbfmu8DAo5kMMYT9RBkRHQwV+e89DK4TsS912hZt7Fx8C3DiYMM5yoq6VkrwHYOp3wsoxm3CX6A0mHDTEd3AaQiK9UtklBYFZqVrTPMPYaLC3YvsrIKMKLA7c8qwUSDONIaz6MfxSbVGB72hCm1mwqLrwhmkXwhb/uoFfRkwzoqh0E5GeSisFBj/6hS2BAiiTNuDkpiXBVO0uPeCydrF1XYwafG3jP6CQZB7qm3WQof2m+DtAYavucOu+BqmSoVQAowM7ZkGUnakfku0yBGdmjNti3HnnLqZ16o68At2dJWGHDqTVd8m/nUrC6ZyEVwVf+NijHmXuNrhVSoJxh6Rjwb9zaVw3ss9MDGYllh4KmigPtcdZ4K2/93GhAcS6R7/oOPXZ84dCTBVetk44EpFm1+Mow60NSfubjD2OHEoPxUYL+zIRN8/VfFiOtOO2EjktzyYcB0yHSLXQ36Fw/GsCEx7SpvLvUCBbriYxsErDcoQTsOgeU8KNKpFERiSdDmBLVj4zfmr+tdtF5hs8zYW1B/xYYmCGTYP9qO5V8bE64hfuuTLlC6+JVVr7Po3QPyrsOvnd2lVZZxQRn2634Q+BOZ/1gHMFh3AFKqCf5RzDVioZMuHAAAAAElFTkSuQmCC" InformativeScreenshot="2b73c94f8bc1ab3b9e3028d6d548f098.png" Reference="F5Zsp2T990mpxSexIPd5BA/7Ir9oxp5MEWFPEvoTdBBhA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bank' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Edit Full Form'" sap:VirtualizedContainerService.HintSize="954,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/bank?name=%5B%22like%22%2C%22%25State+Bank+of+Hyderbad%25%22%5D" CVScreenId="44e211fb-50c6-47d0-b57b-9d709b7bd9ce" ContentHash="qWPN-k_SEUKQa7pQzkP4uA" CvElementArea="699, 278, 539, 35" CvType="InputBox" DesignTimeRectangle="702, 428, 109, 29" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='BUTTON' visibleinnertext='Edit Full Form' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' visibleinnertext='Edit Full Form' type='' class='btn btn-secondary btn-sm ' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Edit Full Form &amp;#x9;&amp;#x9;&amp;#x9;' check:text='Edit Full Form' /&gt;" Guid="a0661f3f-caca-4336-9660-953d1d9d679e" InformativeScreenshot="2b070f299b76aec5b41447806c14029d.png" Reference="F5Zsp2T990mpxSexIPd5BA/cuX87IHRhEOWb_kqFSRyPg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bank' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Bank Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[in_BankName]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CVScreenId="c3ad70ca-12dd-4c24-97fd-c8361dd76f46" ContentHash="j_OyFonSPkSqhS0PcRhwtw" CvElementArea="358, 336, 597, 35" CvType="InputBox" DesignTimeRectangle="359, 340, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='page-Bank' tag='DIV' visibleinnertext='Bank Name' /&gt;&lt;webctrl parentid='page-Bank' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-Bank' tag='DIV' visibleinnertext='Bank Name' /&gt;&lt;webctrl parentid='page-Bank' tag='INPUT' type='text' class='input-with-feedback form-control bold' aaname='' /&gt;" Guid="794a9c1e-153c-4431-98f5-79921e502eb7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAlYAAAAgCAYAAADQQTbqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH7SURBVHhe7d1diqNAGIZRl5X9LyQB7wwKkizAmdfhE42mu5nxanIKDvhTleuHijHN9GY8n8+p67qpbdvpdrtN1+sVAOAjpYXSRGmjNNK7sQurTM7Cow8FAOA6t9JRYG3Cqu/7zYL7/T6N4zg9Ho95MQDAJ0oLpYnSRusNqLTTeixhtY6qLDr6UAAAnnMrHcXVHFaZUDeHYdgtBgBgK81U/ZTzJaxqS8tOFQDAz9XOVVpqDqtcrAuvkwEA+FptUOW4yc8Gf7JbdblcDq8DAHyy2rVKUzVVWXnS/WhyEVYAAHtpqPr2r6mXf373SgVhBQCwl4ZKS6WpmhzE0cQ1YQUAcKx6SlgBAPwjYQUAcBJhBQBwEmEFAHASYQUAcBJhBQBwEmEFAHASYQUAcBJhBQBwEmEFAHASYQUAcJIlrPwJMwDA39v8CXPbtvPJOI6Hk4uwAgDYS0OlpdJUTdd188n9fj+cDADAe2motFSaqsmFqqzXiQAAfK2+/ctxM/0edcGuFQDAz9VuVVoqYw6r3MjFGIZhtwgAgK00U/VTzpewyuj7frlp5woA4L3aqYo0VI0lrDLWcZUtrSzKk+7fvYoBAOB/lhZKE6WN6hGq16jK2IRVRhavFwAAsJVWSjO9jl1Y1cjk/GwwC+slogAAnygtlCZKGx0F1Z8xTb8A8xjo0EQ6GLkAAAAASUVORK5CYII=" InformativeScreenshot="4b4829507196f18df7e210e767e8d0a8.png" Reference="F5Zsp2T990mpxSexIPd5BA/cNLh8BMpBkeGR71Rs4rm3Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Bank' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="954,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CVScreenId="c3ad70ca-12dd-4c24-97fd-c8361dd76f46" ContentHash="q8wzppoHdE-_AXms_iGo-Q" CvElementArea="1546, 209, 54, 32" CvTextArea="1555, 217, 35, 14" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1548, 211, 50, 28" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Save' parentid='page-Bank' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Save' parentid='page-Bank' tag='BUTTON' type='' class='btn btn-primary btn-sm primary-action' check:text='Save' /&gt;" Guid="764de162-5b33-4185-bbd0-4b2299d996b9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAgCAYAAABZyotbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANWSURBVFhH5Vgxa9tAFO6/8JDfITCZjZduFYRgyBI6VBAoHgKmQ3GHYDIUk6EmQ3CHoMWgDEEdDDIUnCGgDMEZDAoElCGgoaAhgyDD1/d0OllS5CTK0FjqBx/47t6T3nfv3Tvb71BR/H/CbNvG7u4u1tfXsba2hlqtthLkWDgmjo1jXIZcYeyU99BVJMeah0fCNjc3cx+wyuSYs0gJK1OmssxmLhbG9ZrnUCYmz1wsrMzZkkxmLRbGnSbPuExkDRKxsFVq6a8la5CIheUZLmWzhc6BDuOoh+0PSr7NG1GioDAF3bGLgB0eAgThB8C/HKKVa//vKVFM2L5NogI4Iw1KNNfYn8Inf/dEfWz/BpQoJKzzmyTc2+il5lV0fxoYflsIUz71YZ478PwA/u0M1qHciPcYTBw44368MSE3BpjOZzD3onGzAyP09+Fd2zC+NBa2z1CiWMZ+zMKMub+6UOs568wtHQ6VaOCRoJFBArl0KcvHQrh64tLbHOgJf23sUWnPMOS5jcj/zoZJ/talF/rPDl92liUKn7HOqYPgQfj4dw6moz60pEhqLL2jATrxnALjhoznuhjXKXAaLkq3DYt0Bee9cNw9o6rwp+iGa8K/f0FKPQtaPLecEgWFRayraB8YVD60mywyoAxspde394YwRhbsOZUUN5nrSBgFOryi8Y0BlcefLXBO7H1e04TIa4t8jQUvaJKzLJ//BCVeJyzJZg82d4+rgRh/NYWQwIdLouyJDvuOxrEwYtiEXJgbUYYoG+1wrYspP+uPC4d80zQzZzufEoWEDS+p2q/09MGXpRYFng708bogbcY9mY2pabD5WIvX9LmwTb5Dqb/8rpQoJEwcfG4ePbSaNMfnaeSIdn/aCm3CRnBPjSAsTQXaoR2up4XV0J6QHXU9yisMypycV76LK2V23EaD56hDmrfkf2tgO7J5ihIFS7GB3oS6XNQ8QtBF7Z4NFhd0ncqJj4SEN4XNgWWE1Xb4bIn5bAV0eLOS7/DlRj1PiVeesQZaOxq0nZbY1Rw2tmj9o5oJugjFO4p+ZZOIhVX2S3Blf7ZU9odmZf8aYJQ5a8lsMVLCGJX8+02iTJnLZkoiVxiD65WduNOs0lXAsXBMHFvyTGWxVFjZUVFhwF+TLg6Neh/3AwAAAABJRU5ErkJggg==" InformativeScreenshot="3a572491f0f474896919736aee345e1b.png" Reference="F5Zsp2T990mpxSexIPd5BA/DH3YazeaekyhkEWW3llUWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Bank' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NCheckState DisplayName="Check App State 'NewBankName'" sap:VirtualizedContainerService.HintSize="954,447" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="0307513c-f105-4271-91ce-2070b29588c3" Version="V3">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,205" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Throw DisplayName="Throw (Create Bank Error)" Exception="[New ApplicationException(&quot;Failed to Create Bank&quot;)]" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/bank/State%20Bank%20of%20Hyderbad" CVScreenId="51a13411-8836-4f4d-8409-e39177544ca3" CvTextArea="367, 215, 230, 22" CvType="AnyWordGroup" DesignTimeRectangle="360, 66, 229, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='page-Bank' tag='H3' aaname='{0}' /&gt;&quot;, in_BankName)]" FuzzySelectorArgument="&lt;webctrl parentid='page-Bank' tag='H3' type='' class='ellipsis title-text' /&gt;" Guid="4ee2bc46-49a0-4a84-b805-be3184081f07" ImageBase64="" InformativeScreenshot="799ff5cc031876d95411161763b621ea.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://erp.skillrpa.com/app/bank/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,254" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message (Bank Exists)" sap:VirtualizedContainerService.HintSize="388,166" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Bank Name exists in the ERP Application&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/bank?name=%5B%22like%22%2C%22%25State+Bank+of+g+India%25%22%5D" CVScreenId="e245b770-79b1-43ab-8900-4beb283598ab" ContentHash="ID9fglOgQk6o1bkgscdhdw" CvElementArea="1001, 623, 148, 32" CvTextArea="1010, 633, 130, 13" CvTextArgument="Create a new Bank" CvType="Button" DesignTimeRectangle="1003, 625, 145, 29" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='page-List/Bank/List' tag='BUTTON' visibleinnertext='Create a new Bank' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-List/Bank/List' tag='BUTTON' visibleinnertext='Create a new Bank' type='' class='btn btn-default btn-sm btn-new-doc hidden-xs' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Create a new Bank &amp;#x9;&amp;#x9;&amp;#x9;' check:text='Create a new Bank' /&gt;" Guid="d3b0076b-a457-4849-a950-958101ff5b7e" InformativeScreenshot="14c38457fcfe3060ab483a9b92c61658.png" Reference="F5Zsp2T990mpxSexIPd5BA/Juz1mQSIckOpqmM3_bkrug" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bank' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="Emwy_jxa1EW5qJRiI53GHQ" IconBase64="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" InformativeScreenshot="9c1c4f94bd9b37fd30bf20d8dfd686f6.jpg" Reference="F5Zsp2T990mpxSexIPd5BA/edwZN4QdzEy2h1pQ2fEciA" Selector="&lt;html app='chrome.exe' title='Bank' /&gt;" Title="Bank" Url="https://erp.skillrpa.com/app/bank" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

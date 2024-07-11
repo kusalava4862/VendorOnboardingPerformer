@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Bank",
+  "Type": "Screen",
+  "Id": "edwZN4QdzEy2h1pQ2fEciA",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/edwZN4QdzEy2h1pQ2fEciA",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/uiwwVs9pXUuRNSBNvHUrrw",
+  "Created": "2024-07-11T03:32:15.7393721Z",
+  "Updated": "2024-07-11T03:32:37.7660699Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

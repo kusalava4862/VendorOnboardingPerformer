@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="E834L0IG70ybOGJsL0Z6Mg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/bank" CVScreenId="092be425-874b-41d2-8edf-92afe5eacbd1" CvElementArea="563, 269, 144, 32" CvType="InputBox" DesignTimeRectangle="565, 272, 140, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='page-List/Bank/List' tag='INPUT' type='text' placeholder='ID' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-List/Bank/List' tag='INPUT' type='text' placeholder='ID' class='input-with-feedback form-control input-xs' aaname='' /&gt;" Guid="7eddf0a2-b024-4b13-b4cc-2976ac4432b0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bank' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="74579cdc04f0c9b8c48ae620ba71c702.png" xmlns="">01yZ3QwtlaUeeDYNN9wlFIw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

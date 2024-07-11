@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Bank",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "sO52cpc8wkKHhhIeeOlWmA",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/sO52cpc8wkKHhhIeeOlWmA",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/smb1XPnkjke0dhTKhUy5-g",
+  "Created": "2024-07-11T03:56:39.4506371Z",
+  "Updated": "2024-07-11T03:56:39.4506371Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

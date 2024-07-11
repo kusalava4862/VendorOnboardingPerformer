@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ID9fglOgQk6o1bkgscdhdw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/bank?name=%5B%22like%22%2C%22%25State+Bank+of+g+India%25%22%5D" CVScreenId="e245b770-79b1-43ab-8900-4beb283598ab" CvElementArea="1001, 623, 148, 32" CvTextArea="1010, 633, 130, 13" CvTextArgument="Create a new Bank" CvType="Button" DesignTimeRectangle="1003, 625, 145, 29" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='page-List/Bank/List' tag='BUTTON' visibleinnertext='Create a new Bank' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-List/Bank/List' tag='BUTTON' visibleinnertext='Create a new Bank' type='' class='btn btn-default btn-sm btn-new-doc hidden-xs' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Create a new Bank &amp;#x9;&amp;#x9;&amp;#x9;' check:text='Create a new Bank' /&gt;" Guid="d3b0076b-a457-4849-a950-958101ff5b7e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bank' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="14c38457fcfe3060ab483a9b92c61658.png" xmlns="">0qe8pHRGb80CtZdH3lGoxxg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

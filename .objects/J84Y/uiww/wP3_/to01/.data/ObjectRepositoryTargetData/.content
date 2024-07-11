@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IWICEm-YdkiBprcRUPR7sA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/bank-account" CVScreenId="aa4bebb4-be40-482d-a529-b6e4ebbd529d" CvElementArea="1435, 208, 165, 33" CvTextArea="1461, 217, 130, 14" CvTextArgument="Add Bank Account" CvType="Button" DesignTimeRectangle="1462, 218, 128, 14" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='dd Bank Account' parentid='page-List/Bank Account/List' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dd Bank Account' parentid='page-List/Bank Account/List' tag='SPAN' type='' class='' check:innerText='Add Bank Account' /&gt;" Guid="496c11a2-1826-43d2-828f-a76031440963" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bank Account' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="80f014cdc9d488a53aa8375908d07998.png" xmlns="">0cUbk9WXcUkedWJ7BI8rsoQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

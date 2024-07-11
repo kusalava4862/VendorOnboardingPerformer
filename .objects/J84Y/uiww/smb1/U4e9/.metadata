@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Is Default Account",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "U4e9mwz_Wk2wghZs2smoIg",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/U4e9mwz_Wk2wghZs2smoIg",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/smb1XPnkjke0dhTKhUy5-g",
+  "Created": "2024-07-11T03:56:39.404897Z",
+  "Updated": "2024-07-11T03:56:39.404897Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

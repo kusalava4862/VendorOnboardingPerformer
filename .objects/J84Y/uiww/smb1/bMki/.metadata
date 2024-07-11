@@ -1,0 +1,16 @@
+﻿{
+  "Name": "CompanyAccount",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "bMkiT7wnMUyWf0lE1R2TpA",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/bMkiT7wnMUyWf0lE1R2TpA",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/smb1XPnkjke0dhTKhUy5-g",
+  "Created": "2024-07-11T04:01:49.4862781Z",
+  "Updated": "2024-07-11T04:02:52.3635068Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

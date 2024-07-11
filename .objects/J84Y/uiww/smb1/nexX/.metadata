@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Branch Code",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "nexXYHzi0kufbaW7lcBojg",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/nexXYHzi0kufbaW7lcBojg",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/smb1XPnkjke0dhTKhUy5-g",
+  "Created": "2024-07-11T03:56:39.5086778Z",
+  "Updated": "2024-07-11T03:56:39.5086778Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

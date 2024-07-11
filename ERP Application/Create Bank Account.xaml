@@ -1,0 +1,329 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Create_Bank_Account" this:Create_Bank_Account.in_AccountName="Sample Account" this:Create_Bank_Account.in_AccountType="Current" this:Create_Bank_Account.in_BankName="CITI Bank" this:Create_Bank_Account.in_BankAccountNumber="32145875845" this:Create_Bank_Account.in_BranchCode="954215" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_AccountName" Type="InArgument(x:String)" />
+    <x:Property Name="in_AccountType" Type="InArgument(x:String)" />
+    <x:Property Name="in_BankName" Type="InArgument(x:String)" />
+    <x:Property Name="in_BankAccountNumber" Type="InArgument(x:String)" />
+    <x:Property Name="in_BranchCode" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1794,3342</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Create_Bank_Account_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Create_Bank_Account" sap:VirtualizedContainerService.HintSize="512,3277" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Bank Account" sap:VirtualizedContainerService.HintSize="450,552" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="3f4925f1-6785-49c6-95c4-df6b5958c908" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,303" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'AddBankAccount'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/bank-account" CVScreenId="aa4bebb4-be40-482d-a529-b6e4ebbd529d" ContentHash="IWICEm-YdkiBprcRUPR7sA" CvElementArea="1435, 208, 165, 33" CvTextArea="1461, 217, 130, 14" CvTextArgument="Add Bank Account" CvType="Button" DesignTimeRectangle="1462, 218, 128, 14" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='dd Bank Account' parentid='page-List/Bank Account/List' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dd Bank Account' parentid='page-List/Bank Account/List' tag='SPAN' type='' class='' check:innerText='Add Bank Account' /&gt;" Guid="496c11a2-1826-43d2-828f-a76031440963" InformativeScreenshot="80f014cdc9d488a53aa8375908d07998.png" Reference="F5Zsp2T990mpxSexIPd5BA/to01INFM7UGbNvicQ8qABQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bank Account' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="L2P-xKilykip3USHigv5Gg" IconBase64="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" InformativeScreenshot="d47b7bda2aa4088f076b095302b02a19.jpg" Reference="F5Zsp2T990mpxSexIPd5BA/wP3_E1gN30OnURX_a9X2nA" Selector="&lt;html app='chrome.exe' title='Bank Account' /&gt;" Title="Bank Account" Url="https://erp.skillrpa.com/app/bank-account" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="CreateNewBankAccount" sap:VirtualizedContainerService.HintSize="450,2637" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="2812f302-1975-4283-81b6-79ccc447b385" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2397" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Account Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[in_AccountName]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" ContentHash="cLlUTDlf50eaAR2v2VF1oA" CvElementArea="347, 300, 601, 35" CvType="InputBox" DesignTimeRectangle="351, 304, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='page-Bank Account' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-Bank Account' tag='INPUT' type='text' class='input-with-feedback form-control bold' aaname='' /&gt;" Guid="27b3f66d-ca72-4ef2-bab7-4a70d687086f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAlYAAAAgCAYAAADQQTbqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHoSURBVHhe7d3NiqNAGIZR7/8iE3CnKEhyAc68Dp9ooj09Pe5yCg74U5X1Q8WYZj4Zz+dz7rpubtt2vt/v8+12AwD4SGmhNFHaKI10Nt7CKpOz8OhDAQC4La10FFi7sBqGYbeg7/t5mqb58XgsiwEAPlFaKE2UNtpuQKWdtmMNq21UZdHRhwIA8Fxa6SiulrDKhLo5juPbYgAA9tJM1U85X8OqtrTsVAEAfF/tXKWllrDKxbrwOhkAgK/VBlWOm/xs0G4VAMDP1K5VmqqpysqT7keTAQA4l4aqb/+aevmnVyoAAPy7NFRaKk3V5CCOJgIA8HfVU8IKAOA/CSsAgIsIKwCAiwgrAICLCCsAgIsIKwCAiwgrAICLCCsAgIsIKwCAiwgrAICLCCsAgIusYeVPmAEAfm73J8xt2y4n0zQdTgYA4FwaKi2Vpmq6rltO+r4/nAwAwLk0VFoqTdXkQlXW60QAAL5W3/7luJl/j7pg1woA4PtqtyotlbGEVW7kYozj+LYIAIC9NFP1U87XsMoYhmG9aecKAOBc7VRFGqrGGlYZ27jKllYW5Ul3r2IAAD5ZWihNlDaqR6heoypjF1YZWbxdAADAXlopzfQ63sKqRibnZ4NZWC8RBQD4RGmhNFHa6Cio/ox5/gU3Ow4gYRUvSQAAAABJRU5ErkJggg==" InformativeScreenshot="f0970f5f7afb216557f998b02799b621.png" Reference="F5Zsp2T990mpxSexIPd5BA/URobkOEkVkSFkNtprVCMCg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Bank Account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" CvTextArea="349, 281, 102, 12" CvTextArgument="Account Name *" CvType="Text" DesignTimeRectangle="351, 278, 100, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Account Name' parentid='page-Bank Account' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Account Name' parentid='page-Bank Account' tag='LABEL' type='' class='control-label reqd' check:text='Account Name' /&gt;" Guid="63aa3e83-19ee-4c5a-b75b-d25d6cafea5f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAYCAYAAAAWPrhgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUFSURBVGhD7VdRa9tIEL7fqJeFgCAIAqYQEzCFmsCFgLiHUCJa8ENQISqtawguRIGYPLgQHJKUK4LUhuAD4yO4YJRLLHLdI4dq+G5WWkWS7RxuyrU60Ad+WK20OzPfzDfjn5Aj08gJyjhygjKOnKCMIyco48gJyjhmEMQx6Dhw+p5c///h9cmfzoA8S8Mftum5C1+ufyT8YRefh3/LVYxpgtwGyoyBLVroykfZBkd710TrQi5noL2lQFFUVJw0Re5+GcqTBly5/iEY/Y7Pl2PcHm3j+uQGXy574CO5R5giaLBbhPqyhcYTFda5fJhpuGSrAvNMLmdAEFTSdWhLJtq38iEhCwT5FycYWSZGtW1c1d7gynqLm4u4kiYIGqD+KCRGEMW22vK5xNiDs12GyigjmYriZhODsdwj8F4DxjKjbFXAtDVUO4mMvXJgrapgYm+xCOPdQG4QzqsoPG0iFlUPzacFVGWCdF8XsLF3CluX3y8baA3FTviesIdphYkzYgiCyvt9nG4yaC/ad5I2SRDvVLGmSfuXddTPI/vDe6zDU1QC/xiK223wYUv6y+juFty7WHD09w0UF0Tl0rubDfQn9fUOVD1nb3H1/Bn+eE5EnV3ii9wRSBN0bkGNpO2TjSIzcJrIuO5LDWzVxkB4OHbReqZBJRIDh70WdKbB/BCGiPfqJJVlNIT34y6sJYby3gC+cMIlx2htHEurz8yJTE5XhQgwWxKk0E2UJN1aHFif91EvKTCOODif3U1CguhtaaP1W/g8RZDXxBrZW++FNnHHhMao4oKgh/aw9Ubou+fAJPvZahX9G1rf9FGl/fJB6Lt3qNNePdwbE1k7ZTC9NTN5/I6Na/sj/vp1JyDnT/sVRp17Kqi7rZK8RZ1HGEVBfB853YbJCqgntZ57cD0eEOQdkLObp6mGyz0XnghaxwR7VKf6jOEfG1DI6CAccxBU2El8LfqkQsELF3NJXEAQwSU72QrZQoFPESSQUAPfbWJDkQkm76g4wVaA5JkC7l4JSqA4HhqkFKn2MHZQEWddyfUM3J68wejkWq5ixASNBQEKir+YMF+EP+OxGgcxFZRpTBqcRBCISblMkjIHQamzv4EgUfmNVVHNLrhIkuheId81HcVFkqwFDYWfSyhOEJS8Y4qgOx8pjiSRQibTv+isr8MdQf57gzLLRPMDjaTR78iiQKyhKWozyoLkJWMfXEqgyKCpnnVL1SWy0qlMECAraLURlr0gqGQn9v9DggSGdii/+3FiBPasWGgLWQogAv0QglzYJaogKaPfCkmQTw2Uqmc3KUIC1BzXI0N8MkqFtuWASyno12iQiLQ1GM/LsD8FW6TL1Gcivb8lZxepP0Vj7ngAm+RTP5SqTO/qFIzoW96rEgHzEhTavvZulsKHmPqeMNgh2+nvREQQp76hUI/xpG/ekQH1QQTJAUv0ankWpwTUFipwkvo/J0KCRIO8pwQDw1fosmDRDycpkgCNJhT2uIqujLmAd1yhyYVB1egd6lcbh/GBvGdDJ/lgGg0aNNmUat3UH0f3QA+nw2AislChxj8fQWEACuLbiSqNMIugcHBJfCOkb13K26KK0o4F44EEBQMUTX2MJt2CmAoXSjSRJr2dH6khYW6QdEXSNgUhezdS2mbA5/fviW/v3fte8P/Fvq9FEIsHlE0CDyMox3dDTlDGkROUceQEZRw5QRlHTlDGkROUaQD/AGG4E/15UMxqAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Account Type'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[in_AccountType + &quot;[k(Tab)]&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" ContentHash="w0XExXDKckyGksCZXcjCpg" CvElementArea="349, 443, 597, 33" CvType="InputBox" DesignTimeRectangle="351, 447, 594, 28" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl aria-role='combobox' idx='3' parentid='page-Bank Account' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' class='input-with-feedback form-control' parentid='page-Bank Account' tag='INPUT' type='text' aaname='' /&gt;" Guid="bb16a18e-28b4-41f3-aaec-fc3cc0de7474" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAlYAAAAgCAYAAADQQTbqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVHhe7dvBboMwEEXR/v/vIswGiWpajUOIrQZNdj1XOjtg/WTg65AkSdJHMqwkSZI+1HRY7ft+bNt2rOt6LMsCAPCvxSaKbRQbadZwWMVNowcCALD8bKVRL8OqtTZ8AAAAD7GZrj0NKydVAADvu55c9WEV7wtHNwAAMHf+5qoPK6dVAAD3nU+t+rDy9x8AwH2xobI+rEYXAgDwt8ywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoyvqwWtd1eCEAAHOxobI+rLZtG14MAMBcbKisD6t934cXAwAwFxsq68MqcmoFAPC+82lV9DSsotba8EYAAB5iM117GVaRkysAgLnrSVU2HFZRvC+Mm/wtCADw+/dfbKPzN1XXpsNKkiRJ9zKsJEmSPtJxfAP3XsqNc5ucyQAAAABJRU5ErkJggg==" InformativeScreenshot="8062775b3253d0ff632905919432ba56.png" Reference="F5Zsp2T990mpxSexIPd5BA/ai6ZLyFXAEm-4JheJhCESA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Bank Account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" CvTextArea="349, 424, 86, 15" CvTextArgument="Account Type" CvType="Text" DesignTimeRectangle="351, 421, 84, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Account Type' class='control-label' parentid='page-Bank Account' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Account Type' class='control-label' parentid='page-Bank Account' tag='LABEL' type='' check:text='Account Type' /&gt;" Guid="d70d1b73-88df-4e00-9c9c-c9a9829909e4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAYCAYAAAB+zTpYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARxSURBVGhD7VZBa9tIGN3fqMtAQGAEAROoKZhCTA6mYPZQQkRgfQgK1IE1geBDHIjpwYHgElwoguJAcCEYigtFUBABQUAY3r4ZjeKRbO96u6vd7tYPdPg0o9H73nzzvvkJGxSKjcAFYyNwwdgIXDA2AheMjcAFY4nAEaa3PvxJqOP/OB4DjN4zn6XPBEVnuShw0ENNCIhSC2P96vtGhNG5h8EnHebxMEL32IMnn19qsK0KGml8PMBUTysKCwJPzyuwTwbo7dpo3emX3zUCcrXgfdDh70EWj+VhpMN/AjmBp+jsJMJKocVRjsoshP+aVSAsWMJG5aCP6UyPEdF9D+4zAcuyIJw62reRHiG++mjt2RByrFSBe2XUzl0b5f2+cVxD9PfLaOsNHv9axquLIboN/f0zF4MvciSZJ/kIp5xbYwnyAocDuDtcy/xIvWtiKKkrXj34Vy4qW8x5y0H9dMwzkyLC5FKPWYJ69DAxUpbICnzXgp1aw+cuKsLF8FGNKIxPHIi9LqYxg1mAwaEDm5sgQ0msIRx47xO20X2HVlNDL2AwG6O1LVC7mCKWGxIwCcbujWbzwYO122MtpshW5eiIAm5LUfknbvL4tPY0P44m6FQtuG8jRJFishoLFRxjeEhel/M/q8I6HCY5SV60y/rZGKHkHfrwyLtxneQYXjeoRweTBwYzin1Wg2gMMpucEXj82qY9pM4rk6QI71LSI3iijI7pdVGIIIwUmfANkz7QxDSiMEAok771IHY6Gb+Lb1xYJKMkXkPg8pnxdUaov2gR/Ld4zqJRwRTd54Y1Sl6y4IxTqnjv9ShiiB5PZMZGZz6aFovqq46JucAzKaCFys9pA/DgvrDnIvyBf0kRzEowEVxS/LzdmKKuIXBm7b9TYHm6SrpwPuoTnAq6wIu4b8NRa1Av2pW0w+yjT63Gk8DxO5c76aFvXmPetkiojr6s+XR3zL/NYkTaQoKL6qJnP7K6JVm/uUB0XgmETKTa/XcEJpLGPqYFsq+cGyclrWAdKshcFNcA3Sor+KN+vwJaYHrRAavXXFyBTeRlmlzMRG04Rz4ivcOTU/pV6jmSPD23+1kN8XpEn6UnKwKP3O0S/dnXnjvjUaT9pF4m5za4eem3EaukxmpYT+CEe/3KdL4VWCGw6jdsvJVSroCkwGxejXRtyXuPzUzrpPxa9iStR8T5zlYTvuGTicBhH/V8dWpENHIr9Sg2FNXJ2U0ddk7xoo2x0TXDmyY7qoDtcA79+tX1fMHovotGifdrh42SpKuZbszc3zSS2wnHyvstNNm41hM4Sawsv80f5zxWCawLyXqZu4VIgXfb6J/wdDIvybu8P0CQWohs9LzFCN6oyg5vT1tV3nzMrHJNbm3w6KfWsABpGw/aGpYgjlaPyW9XjhUKKbDZ0DWUwHrTYuacG36Cynn54LcJ/D9C/GUEn3dZZzt7W1AwBf5G/PACT9nIveMOfONq9YRPA3jno4yV/Vn88AIXjY3ABWMjcMHYCFwwNgIXCuA3x6hRLqRtd+QAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Bank'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" Text="[in_BankName + &quot;[k(Tab)]&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" ContentHash="CQNsKgdUlkW9-uAb_cCWjQ" CvElementArea="349, 372, 597, 33" CvType="InputBox" DesignTimeRectangle="351, 375, 594, 28" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl aria-role='combobox' idx='2' parentid='page-Bank Account' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' class='input-with-feedback form-control bold' parentid='page-Bank Account' tag='INPUT' type='text' aaname='' /&gt;" Guid="8fb44892-c010-40fa-aede-0edfad63ff9f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAlYAAAAgCAYAAADQQTbqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVHhe7dvBboMwEEXR/v/vIswGiWpajUOIrQZNdj1XOjtg/WTg65AkSdJHMqwkSZI+1HRY7ft+bNt2rOt6LMsCAPCvxSaKbRQbadZwWMVNowcCALD8bKVRL8OqtTZ8AAAAD7GZrj0NKydVAADvu55c9WEV7wtHNwAAMHf+5qoPK6dVAAD3nU+t+rDy9x8AwH2xobI+rEYXAgDwt8ywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoyvqwWtd1eCEAAHOxobI+rLZtG14MAMBcbKisD6t934cXAwAwFxsq68MqcmoFAPC+82lV9DSsotba8EYAAB5iM117GVaRkysAgLnrSVU2HFZRvC+Mm/wtCADw+/dfbKPzN1XXpsNKkiRJ9zKsJEmSPtJxfAP3XsqNc5ucyQAAAABJRU5ErkJggg==" InformativeScreenshot="a06edeadff694c69be09ca611b2f3d6f.png" Reference="F5Zsp2T990mpxSexIPd5BA/sO52cpc8wkKHhhIeeOlWmA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Bank Account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" CvTextArea="350, 352, 41, 13" CvTextArgument="Bank *" CvType="Text" DesignTimeRectangle="351, 350, 40, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Bank' parentid='page-Bank Account' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Bank' parentid='page-Bank Account' tag='LABEL' type='' class='control-label reqd' check:text='Bank' /&gt;" Guid="3aff6029-376a-4d65-982c-0801709f0acb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAXCAYAAABwOa1vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJISURBVFhH7ZPRa9pQFIf3N+YlIARGQAgFy6AMFgqTgi/zobJCH0oGFbZWEH3IoLIH96KgMAm4+OKDWGQPEqeRrBmOVPjtJLlq0lVdLFIEP7hwjyfc+3nOuS+wY+yFt81eeNvsrrDT16E1tMDS0R2z5FOZGNAbXUQ5zum3cdf/w6IFc2HjRgaXSEH5oPjrVIbAi1CaNvviCRglyJwCnYUrMW9xN5hiUr3EqGbhftCBbbIcERa+CB9pV9PgjlQYLN6YCMJOrwYzq8DMXWKYu8YwW4TVW1R6pTC087CwpePqrQie48DFDpEqtjGrf/uThPTnOtSU4OX5RAaVPks+ELY7KlKvMij1HuseVbdZxPDsPX6ekXhzgHuWcQkLnxQWM1xVkZakwEiMUT7hIee7sKcUWhqUOE95P6tfkGTclXTozjHaOTrvTcn/swFhu1OAHJNR6Dw+ak5LxUj9jt/f8p7sL/UjzNayCsdESAcSWyJEMYms9uCpuLIu9JDK7zjIN379XWEp/8PbewSryvaVNbJBJrVrmLURixasHom+ShclUWbOY+2KWum2nId4kMRRIiw823v8I8yDj9GK02/rfZeyWpiuU2gevbZP6shwh8i2FrcFJdcLp1GxbPqO3sAxjcqsUxFZLuzY6H5NQ+QzqE8otipIUbVLQz+NYQWZl1GE2X5qoHRMHaK7Nil0WNh9/fPFQ3BfcmDejC9JfxwkAcLrArKnGwi72NS5uIDzRnTlufB/M3VguxV/JqILPzN74W2zF942OyYM/AV6tgGPIo+X6QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Bank Account No'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" Text="[in_BankAccountNumber]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" ContentHash="h2ivEVw7tEORy2xFCwXy7A" CvElementArea="972, 844, 599, 32" CvType="InputBox" DesignTimeRectangle="975, 847, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='4' parentid='page-Bank Account' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback form-control' aaname='' parentid='page-Bank Account' tag='INPUT' type='text' /&gt;" Guid="19e46973-6d74-4d02-bd64-97f9f7186bf7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAlYAAAAgCAYAAADQQTbqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVHhe7dvBboMwEEXR/v/vIswGiWpajUOIrQZNdj1XOjtg/WTg65AkSdJHMqwkSZI+1HRY7ft+bNt2rOt6LMsCAPCvxSaKbRQbadZwWMVNowcCALD8bKVRL8OqtTZ8AAAAD7GZrj0NKydVAADvu55c9WEV7wtHNwAAMHf+5qoPK6dVAAD3nU+t+rDy9x8AwH2xobI+rEYXAgDwt8ywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoyvqwWtd1eCEAAHOxobI+rLZtG14MAMBcbKisD6t934cXAwAwFxsq68MqcmoFAPC+82lV9DSsotba8EYAAB5iM117GVaRkysAgLnrSVU2HFZRvC+Mm/wtCADw+/dfbKPzN1XXpsNKkiRJ9zKsJEmSPtJxfAP3XsqNc5ucyQAAAABJRU5ErkJggg==" InformativeScreenshot="a427e5d552cbb3a61f800292ae38c0b5.png" Reference="F5Zsp2T990mpxSexIPd5BA/Fm1Lf84BS0-GyCG0FJVNjg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Bank Account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" CvTextArea="974, 824, 107, 12" CvTextArgument="Bank Account No" CvType="Text" DesignTimeRectangle="975, 821, 106, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Bank Account No' class='control-label' parentid='page-Bank Account' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Bank Account No' class='control-label' parentid='page-Bank Account' tag='LABEL' type='' check:text='Bank Account No' /&gt;" Guid="42c05fb8-2d4b-4dac-9355-be3131916dba" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAYCAYAAAAbIMgnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUiSURBVGhD7VfxZytZFN6/Mb9cylBDidIo8XhRXpX5ZevpeGyXytI8Nh6VpSmN/tBSeSpLDU9K5VGhUiqUUYYS4dvv3LkznZk2bdrurob5GObeO/fec8537nfP/IIcM4mcuBlFTtyMIiduRpETN6PIiZtRxMSNrrvwTr3E00XfN4Nvxd0Q3dM+XrpccCU2vXzee0UYY/ozNh0R/P6L/YyJG+5XUFhyUP2jGj4bFVjKRvVHYL54A4YtVApVdE1zOgzR+qiglIXaT9P13nHZRnW3i0kR0zEuFFDZG5oegx9V9r8sPmnittJTg+/rKJSbDOEb8RrirpoozdfQpl3Wds90vnMIAR9bE+OlY7zmwJmroJX86N8mDt5mmrjbLuqfbChmTWGuBOevXpxdvT+LWN/roOlYelwtuWhfm8EMccFFE86yi9bl5NM82CmGhAmBinMz8hJctOAuKZ3Byl5F/Syx1o2H2oqxY74E92hgBgQB+vsuSnP0oaBgf6qje2uGKFaHn4uon5um4LyO4ufDUMb0exOdXYdqFMbAPTbRkTGb9lAhiouZNQzCGHv0rQS1kiA4S9zYh7ctisc9uF5p4xCDjP9p4tYa5n7j872J9WIxIZV0ak2hstNHIIvceqguKI6Ho90tBmlByBrpjXvfuF6UfQnigosGKsy4xsVk0jDuoTYfSeQAzWUF92+uG8FvwxEZPw1vBb2mMlksc2lXZW+Akdg5bMNdsGhnON8/dmhnFZ5MHZPEnQrUcsMERuS5EPukkTxF8s59hSxZ2/9Zp1/RviMqlMtEb6B/G4R7ZxAfDmOjc2xutQxxva88HCtNDMTk8RDtL2xvdFISnCZuztbZEj42bGZyTXuYQGQQC47DX6nX+2HeCHHFnURmJ0+ZeW9PQ5rgvAaLMhkJpNimvnQQUecf0FY6kqASgT+EH7DnrAq1SCJMv0CP3crXPlorBbgnyZkDNBajJJmCuNTame+T3z6CmDhiRDtt5aIjoUgR10VVFdG41I0Qdx24BQftWBmek8rrJgO+ikPDne/VKXEiQZSYxVWUl9LERe8aD4hjoTHHh9nefYa37hYlJ1UolWElDH+wVwKP+hGDQYlOSIxk8KcgLkXM64kTye5u2bB+8xBcNlDMJHnag4d2P02cnmAM06yXUEvcJckAPk/cOgMfGqv1/REp0ZB9VAnVo+SvSRs1Bmj1KMyg4V4ZKmvrnZEnuZezwRtF0jVEs3wv7yHkxLHvTN5DIjY9PRDiPyOOCDxszlPyD6hEUazG7Msml449+25Mm5hMHJ3tH62Hx/mO7VveKzx98eQb3h3zLyEuMozOrvDEcq/HDt7ohPfEMvXdtCP4R6v3QZH1eKc1r/SQts3l3aPl7o7JJsHwzOrjPuq8I6P7RPzU94dJnOB0E9YCZdm0e1+t8BRIW+6XDWt64uTkiMSbtbJ4EGMioL9KUYniUzZiLC3Gx9hADHZps9NO/eeliZNqMX4ULKn8EvfR8GA1lMkinfvQQG3jFcQJAgaXBcPmaZY6KYAy60TQiVOKyfJPNlkZ0kab0s07YT2q7ghdtc4zGLZUwArlb/fVrxROnd9Z1bFas+WbIpUgqn4FtK1mqtXCXBn1bf4STUucJCULOJmbPtUhHiNOfG47MicZn35YnbPmsFn9qg919DKhiombGlI9yQl8DxBbJlRwgtETY3quFDOTMHpi7P8CVW9SrF9OXI53gZy4GUVO3IwiJ25GkRM3o8iJm1HkxM0kgH8Ah6oPeEaOeZoAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Branch Code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_5" Text="[in_BranchCode]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" ContentHash="7l13pdxWcE--3MROiI1bLw" CvElementArea="973, 772, 597, 32" CvType="InputBox" DesignTimeRectangle="975, 775, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='3' parentid='page-Bank Account' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback form-control' aaname='' parentid='page-Bank Account' tag='INPUT' type='text' /&gt;" Guid="55ce0194-ee1f-4caa-8f6e-6cdcec80f319" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAlYAAAAgCAYAAADQQTbqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVHhe7dvBboMwEEXR/v/vIswGiWpajUOIrQZNdj1XOjtg/WTg65AkSdJHMqwkSZI+1HRY7ft+bNt2rOt6LMsCAPCvxSaKbRQbadZwWMVNowcCALD8bKVRL8OqtTZ8AAAAD7GZrj0NKydVAADvu55c9WEV7wtHNwAAMHf+5qoPK6dVAAD3nU+t+rDy9x8AwH2xobI+rEYXAgDwt8ywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoyvqwWtd1eCEAAHOxobI+rLZtG14MAMBcbKisD6t934cXAwAwFxsq68MqcmoFAPC+82lV9DSsotba8EYAAB5iM117GVaRkysAgLnrSVU2HFZRvC+Mm/wtCADw+/dfbKPzN1XXpsNKkiRJ9zKsJEmSPtJxfAP3XsqNc5ucyQAAAABJRU5ErkJggg==" InformativeScreenshot="ae439576c3318296d04d9245d478b190.png" Reference="F5Zsp2T990mpxSexIPd5BA/nexXYHzi0kufbaW7lcBojg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Bank Account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" CvTextArea="973, 752, 81, 13" CvTextArgument="Branch Code" CvType="Text" DesignTimeRectangle="975, 750, 79, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Branch Code' class='control-label' parentid='page-Bank Account' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Branch Code' class='control-label' parentid='page-Bank Account' tag='LABEL' type='' check:text='Branch Code' /&gt;" Guid="6b794ccb-3c04-429b-aa2b-8495a9d12ccc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAXCAYAAAB3e3N6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPnSURBVFhH7ZbfZyNfGMa/f+PcHMJQwzKWxhJfdvQiluhFrETZLJHS9CLKmovN0tGLlDW1elHDylKzVFhZalhGOZQIz77nzJnkTDpNmu7o1TwMc34/85n3vOf8h1KFqYRZoEqYBaqEWaBKmAWqhFmgFjBnt2MEV4H2jDGJVeNL6z7C+GqCrZePJwhOB+gd9uCeh4hmqv6Zkky2gLCAGZ06MHYb0oh8Wg5MZqH3naseL6jIg2P0MFbFpyj62oRlMFT3O9J/Z78KxmroXz/fv2TSfbqLLMyVgfyiCaM2RKTKL6ZtYcr+D388v2iD7fQRzlXFlioUJoKOBjPG6L2N/pmHxg5b9J2et1EVZYoKc6+Dy1tZDfwZofm6D/9bB9WKAYOZcE5C6J/Lbzy0d8VYA8yqY/BDtUo4HYzWjNUVHptguR89hX9IHn6r4jxGcCR2XDJntTXCVAPNrweoW8m3VFs+gi9ZJhm/u214N1lHWZjv3GXOvBiiadva347gvaVJ9lyEEQe/p6rrPsxXbfgqdKe0OHvrJfAlEAbnU4iYDM9ufbQJeu+77Er/xkdDpJGrJCfxGxcOc+CJwZvGZpT4an/bnCDDY4v8DzEVXecR/AMqty6TnyTW1PzEP13UK8ugkX4rDlwFUPqtNOBrKTULs2LBfm2rx4JF0dIP0t6J6U6giqnSPzufgf8YwE63pwTSxqWArjTuGnBOVZyf0Xr0IToCHkeIOdVsGJtV4isftK4xesyG+0sVhe4v0TYIyF2+n3F3CVO0m0ehfE8VfCBPZ0ua67f57ZA+qo6R7J9jmk8w+liHRVuR7dio7dVgZmBm854O5HE4pA1js+LwG2vmSpUzpwRsJLshb36diWgX23v10ceshykXSwE+hDn9ZIPtjxCl0akb3gAk+lJ7mOfuOWZirq1gUtSc12G8cTP5T4r7aBpVDEXOnAfoKHALycikuj/5fkQuTpmIdvM4G5mrehzmjGNyTtcNlm63hzDFYuZhOob6n9AcT4Qp2ylHyg8VuqO8SDmr/5Pet4Qp8p+3x2Ad+Mu7ZRzCpTp2oHIibeBx14TVDcAV9OlnyvENP7nP/h6iqvuhsiMOqpTJajunQHvFKO0tE0MWZiaE6XR+o59YeducJrTJMG1xi57mSe/JkSkUy9Oa1rHoNKZ81vyqgd4GphClHK9Fd8vUv7gBHAXyAFuI+gwbtBadDTI1/T9AmH4eSdxVbQLIyJNoG4ng0AIsaSe/Nh1cxKe2csNYwPwnpdvzORIH190/jF+VnE8/RnJEu07eRvIkxotDcI1mj/gtBmYpqRJmgSphFqgSZoEqYRaoEmZhAv4CRB4il7NRZgQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Is Company Account'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NCheck_1" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" ContentHash="XuYTfIO4TUi_RQE_rbmIOw" CvElementArea="973, 352, 18, 17" CvType="CheckBox" DesignTimeRectangle="975, 354, 14, 14" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl class='input-with-feedback' idx='3' parentid='page-Bank Account' tag='INPUT' type='checkbox' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback' aaname='' parentid='page-Bank Account' tag='INPUT' type='checkbox' /&gt;" Guid="1fa01941-0bff-4633-afbc-b87ecc583888" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACDSURBVDhP7ZPBDYAgDEXdfwMODMIgLMEIXL55iTZVidFYbr6Ei/19hYCLgpgjaq2plKKcs1JKw0WNDFmPiSgQqrWq9759vUKNDFkvMxFTCDyFLD07JmLC3U7OkKVnx0Sc/y2+5xeNmSsKu/6wBxn2iwAFphDi/KNFjYyXwEH0hSCRtAKDQ9PFQVKYfAAAAABJRU5ErkJggg==" InformativeScreenshot="8e3f5fd38e4bf33cf3f7378ffd1893af.png" Reference="F5Zsp2T990mpxSexIPd5BA/luZOWgL9XECUOyZbXQIRpw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Bank Account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" CvElementArea="973, 352, 18, 17" CvTextArea="996, 355, 130, 12" CvTextArgument="Is Company Account" CvType="CheckBox" DesignTimeRectangle="975, 352, 150, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' idx='3' parentid='page-Bank Account' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' type='' parentid='page-Bank Account' tag='LABEL' class='' check:text='Is Company Account' /&gt;" Guid="24a2a581-50b0-4531-b133-71cf8ef34f8a" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Is Default Account'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NCheck_2" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" ContentHash="iovLts4PFU-hS9DcOjkP5w" CvElementArea="973, 315, 18, 17" CvType="CheckBox" DesignTimeRectangle="975, 317, 14, 14" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl class='input-with-feedback' idx='2' parentid='page-Bank Account' tag='INPUT' type='checkbox' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback' aaname='' parentid='page-Bank Account' tag='INPUT' type='checkbox' /&gt;" Guid="013be282-a6ac-415d-b1ce-3eb2a94c8e0e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACDSURBVDhP7ZPBDYAgDEXdfwMODMIgLMEIXL55iTZVidFYbr6Ei/19hYCLgpgjaq2plKKcs1JKw0WNDFmPiSgQqrWq9759vUKNDFkvMxFTCDyFLD07JmLC3U7OkKVnx0Sc/y2+5xeNmSsKu/6wBxn2iwAFphDi/KNFjYyXwEH0hSCRtAKDQ9PFQVKYfAAAAABJRU5ErkJggg==" InformativeScreenshot="cca4cbe663ae41f6345f9ec37f80a8e9.png" Reference="F5Zsp2T990mpxSexIPd5BA/U4e9mwz_Wk2wghZs2smoIg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Bank Account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" CvElementArea="973, 315, 18, 17" CvTextArea="996, 317, 115, 12" CvTextArgument="Is Default Account" CvType="CheckBox" DesignTimeRectangle="975, 314, 136, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' idx='2' parentid='page-Bank Account' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' type='' parentid='page-Bank Account' tag='LABEL' class='' check:text='Is Default Account' /&gt;" Guid="8185bffa-6bc3-4573-bbf9-4fd6ad7f8a87" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CompanyAccount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_6" Text="Bank Account - SRD[k(Tab)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/bank-account/new-bank-account-tvllzvzlom" CVScreenId="47e890fd-4d7f-43f3-9cfc-c400b27bf414" ContentHash="otkLzlunYkCn-uheIQAlEQ" CvElementArea="358, 373, 595, 32" CvType="InputBox" DesignTimeRectangle="359, 375, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='page-Bank Account' tag='DIV' visibleinnertext='Company Account' /&gt;&lt;webctrl aria-role='combobox' parentid='page-Bank Account' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-Bank Account' tag='DIV' visibleinnertext='Company Account' /&gt;&lt;webctrl aria-role='combobox' parentid='page-Bank Account' tag='INPUT' type='text' class='input-with-feedback form-control bold' aaname='' /&gt;" Guid="8d014937-9e75-449b-822c-c5bc2850e1fc" InformativeScreenshot="b03f2ec80196866839d9f8daa70a29af.png" Reference="F5Zsp2T990mpxSexIPd5BA/bMkiT7wnMUyWf0lE1R2TpA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Bank Account' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="bd48cc02-fb27-4451-91ba-8924a4918cad" ContentHash="6l4mhWG3wEOdwJvJ-P1y3w" CvElementArea="1538, 209, 54, 32" CvTextArea="1547, 217, 35, 14" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1540, 211, 50, 28" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Save' parentid='page-Bank Account' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Save' parentid='page-Bank Account' tag='BUTTON' type='' class='btn btn-primary btn-sm primary-action' check:text='Save' /&gt;" Guid="d76abfd6-418e-49f5-a6d5-874e0d7982e9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAgCAYAAABZyotbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANGSURBVFhH5Vgxa9tQEO6/8JDfITCZTX5ABCUYspgOFQRMCKHGQ3Emk6FoMxmClhACBmUo6lCQISAPAXUI6hBQISAPAQ0GDx4EGb7eSXqyLCtuZSix1A8+7PfenXzfu3v3bL9DRfH/CbNtG6enp9jd3cXOzg5qtdpWkGPhmDg2jvE15Apjp7yHbiM51jysCDs4OMh9wDaTY85iSViZMpVlNnOJMK7XPIcyMX3mEmFlzpZgOmuJMO40ecZlImsQSIRtU0vflKxBIBGWZ5hPCfKHPrThNdRuE41cm7ejQDFhhxqcWWQfzIP4jQfzTMq3fwMKFBAmQ38iw6mF/l48V1eg/yKBcxv9Ffu3oUABYddwyc4bNpbn2yr0oYrjZK6BzpUFZzJDMPPh3uvoiI3o6nAebVy3hW3E3q0Dd6yhFY4lKBdm5D/14IwGUOrL9usoUECYAuOZDKc2tHZGXEIJvTHX6gze2CDBJlweUpZ74Xof9pxWx72UzwDOC+CPjsNx7y7yd0c69K8WPB76Zmrj1lOg4BkbwPZjh4CCvzehddMiqbGcqNDOm4u5M4vCnMHqRuNQeKp0pUuHHuZBf0/jelQV7o288D80aBVwLuLxHyhQTFjMxiF1xZENbxr5+nc9SEvrHahXOowxlRiVFGfA+hyvt034CGCf81iC9pOWn3TIvHbBIn3YQ8pWQsr6SpZfp8BGwhak8zDk/fRhHvFYxuCBhVAgzy7cBwvGNzfKmBAWN6Hgh5pkyLmMu+oNjwL4j+SboX2lxP7rKfD3wromvDkJSAKMKUotnM8EurIeUb6lzXhxoLEQeh0I2+6qLW+e9G+bR3Tww+ZxIlPp8XnSYD1H7V4NP1w0gk5UmnsdGE9832WCrdN9+BJgRskN7vuL+VoTxoTMfQvqPm8Od0iHvKl0v6T811CgUClKHymg+FwlmLrQPy0y1KQsxFc3IaAGw4Fls1DDgM9Wzjw3KGuyeEL4jO/LZ3gdBTY6Y9J+C8qRgla4qzk2dRktWm+K+2sDRp9R/CubQCKssl+CK/uzpbI/NCv71wCjzFlLZ4uxJIxRyb/fBMqUuWymBHKFMbhe2Yk7zTZdBRwLx8Sxpc9UFq8KKzsqKgz4DWBTD4TiqB2XAAAAAElFTkSuQmCC" InformativeScreenshot="58cf18122b975dca85b38e8cee09d271.png" Reference="F5Zsp2T990mpxSexIPd5BA/MI47Way8uUaaqCpMhq0KRQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Bank Account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="i7HnUJ6B0EqNesOS-rgy7g" IconBase64="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" InformativeScreenshot="784d2be82c53bbeb0b689f159934a5c1.jpg" Reference="F5Zsp2T990mpxSexIPd5BA/smb1XPnkjke0dhTKhUy5-g" Selector="&lt;html app='chrome.exe' title='New Bank Account' /&gt;" Title="New Bank Account" Url="https://erp.skillrpa.com/app/bank-account/new-bank-account-byvfcwzegj" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

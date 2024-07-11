@@ -1,0 +1,16 @@
+﻿{
+  "Name": "AddBankAccount",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "to01INFM7UGbNvicQ8qABQ",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/to01INFM7UGbNvicQ8qABQ",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/wP3_E1gN30OnURX_a9X2nA",
+  "Created": "2024-07-11T03:52:55.7193639Z",
+  "Updated": "2024-07-11T03:53:18.2569996Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

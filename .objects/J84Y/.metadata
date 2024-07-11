@@ -1,0 +1,14 @@
+﻿{
+  "Name": "ERP Application",
+  "Type": "App",
+  "Id": "J84YeDktM0OHriBei9kz2g",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/J84YeDktM0OHriBei9kz2g",
+  "Created": "2024-07-11T03:12:46.8211739Z",
+  "Updated": "2024-07-11T03:14:57.4445536Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

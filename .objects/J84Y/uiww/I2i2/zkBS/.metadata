@@ -1,0 +1,16 @@
+﻿{
+  "Name": "WorkSpace",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "zkBSddChvE2B6KDPcXWRcw",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/zkBSddChvE2B6KDPcXWRcw",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/I2i2uNT7wUaQqf1D4tlGZw",
+  "Created": "2024-07-11T03:23:38.8535563Z",
+  "Updated": "2024-07-11T03:24:59.4150931Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

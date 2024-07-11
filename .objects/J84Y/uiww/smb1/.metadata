@@ -1,0 +1,15 @@
+﻿{
+  "Name": "CreateNewBankAccount",
+  "Type": "Screen",
+  "Id": "smb1XPnkjke0dhTKhUy5-g",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/smb1XPnkjke0dhTKhUy5-g",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/uiwwVs9pXUuRNSBNvHUrrw",
+  "Created": "2024-07-11T03:55:39.9689208Z",
+  "Updated": "2024-07-11T03:55:52.1866526Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

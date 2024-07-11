@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Add Bank",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Id": "7Ir9oxp5MEWFPEvoTdBBhA",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/7Ir9oxp5MEWFPEvoTdBBhA",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/edwZN4QdzEy2h1pQ2fEciA",
+  "Created": "2024-07-11T03:34:10.2340042Z",
+  "Updated": "2024-07-11T03:34:10.2340042Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

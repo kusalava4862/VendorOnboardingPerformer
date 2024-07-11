@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="A5srN31OsEiwhzoNrvwQSg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/home" CVScreenId="572a2c6f-0210-4b84-a4f0-54baf7a40ec1" CvElementArea="944, 542, 144, 33" CvTextArea="953, 552, 126, 13" CvTextArgument="Create a new Item" CvType="Button" DesignTimeRectangle="1384, 211, 144, 28" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='page-Workspaces' tag='BUTTON' visibleinnertext='Create Workspace' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-Workspaces' tag='BUTTON' visibleinnertext='Create Workspace' type='' class='btn btn-default ellipsis' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Create Workspace &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:text='Create Workspace' /&gt;" Guid="754d784f-0d9c-4b11-97db-4b34be517229" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9e55627b4f4b9b961f66c7b2c2d0ff83.png" xmlns="">0FteFmhTekE23I-MeW8x-hw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

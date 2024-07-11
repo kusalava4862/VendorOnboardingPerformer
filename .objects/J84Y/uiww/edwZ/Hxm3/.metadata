@@ -1,0 +1,16 @@
+﻿{
+  "Name": "NewBankName",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "Hxm3Rx2Dck6YGiUJAHqfDA",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/Hxm3Rx2Dck6YGiUJAHqfDA",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/edwZN4QdzEy2h1pQ2fEciA",
+  "Created": "2024-07-11T03:46:59.9428488Z",
+  "Updated": "2024-07-11T03:48:35.2402452Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
