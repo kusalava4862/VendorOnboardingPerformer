@@ -1,0 +1,13 @@
+﻿{
+  "Name": "AccountType",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "OsmfEA2jI02b0cWcYT_ZTw",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/OsmfEA2jI02b0cWcYT_ZTw",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/zMhgUIEGuEm3pufxClW6Gg",
+  "Created": "2024-07-12T03:29:17.690695Z",
+  "Updated": "2024-07-12T03:29:17.690695Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,15 +1,16 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Create_Bank_Account" this:Create_Bank_Account.in_AccountName="Sample Account" this:Create_Bank_Account.in_AccountType="Current" this:Create_Bank_Account.in_BankName="CITI Bank" this:Create_Bank_Account.in_BankAccountNumber="32145875845" this:Create_Bank_Account.in_BranchCode="954215" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Create_Bank_Account" this:Create_Bank_Account.in_AccountName="Sample Account" this:Create_Bank_Account.in_AccountType="Current" this:Create_Bank_Account.in_BankName="CITI Bank" this:Create_Bank_Account.in_BankAccountNumber="32145875845" this:Create_Bank_Account.in_BranchCode="954215" this:Create_Bank_Account.in_CompanyAccountName="Sample" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_AccountName" Type="InArgument(x:String)" />
     <x:Property Name="in_AccountType" Type="InArgument(x:String)" />
     <x:Property Name="in_BankName" Type="InArgument(x:String)" />
     <x:Property Name="in_BankAccountNumber" Type="InArgument(x:String)" />
     <x:Property Name="in_BranchCode" Type="InArgument(x:String)" />
+    <x:Property Name="in_CompanyAccountName" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1794,3342</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1488,3342</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Create_Bank_Account_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -288,9 +289,9 @@
                 </uix:TargetAnchorable>
               </uix:NCheck.Target>
             </uix:NCheck>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CompanyAccount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_6" Text="Bank Account - SRD[k(Tab)]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CompanyAccount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="2812f302-1975-4283-81b6-79ccc447b385" Text="[in_CompanyAccountName+&quot; - SRD[k(Tab)]&quot;]" Version="V3">
               <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/bank-account/new-bank-account-tvllzvzlom" CVScreenId="47e890fd-4d7f-43f3-9cfc-c400b27bf414" ContentHash="otkLzlunYkCn-uheIQAlEQ" CvElementArea="358, 373, 595, 32" CvType="InputBox" DesignTimeRectangle="359, 375, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='page-Bank Account' tag='DIV' visibleinnertext='Company Account' /&gt;&lt;webctrl aria-role='combobox' parentid='page-Bank Account' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-Bank Account' tag='DIV' visibleinnertext='Company Account' /&gt;&lt;webctrl aria-role='combobox' parentid='page-Bank Account' tag='INPUT' type='text' class='input-with-feedback form-control bold' aaname='' /&gt;" Guid="8d014937-9e75-449b-822c-c5bc2850e1fc" InformativeScreenshot="b03f2ec80196866839d9f8daa70a29af.png" Reference="F5Zsp2T990mpxSexIPd5BA/bMkiT7wnMUyWf0lE1R2TpA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Bank Account' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/bank-account/new-bank-account-tvllzvzlom" CVScreenId="47e890fd-4d7f-43f3-9cfc-c400b27bf414" ContentHash="Q1Cj9Htb30SCw0zeE3uLbg" CvElementArea="358, 373, 595, 32" CvType="InputBox" DesignTimeRectangle="359, 375, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='page-Bank Account' tag='DIV' visibleinnertext='Company Account' /&gt;&lt;webctrl aria-role='combobox' parentid='page-Bank Account' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-Bank Account' tag='DIV' visibleinnertext='Company Account' /&gt;&lt;webctrl aria-role='combobox' parentid='page-Bank Account' tag='INPUT' type='text' class='input-with-feedback form-control bold' aaname='' /&gt;" Guid="8d014937-9e75-449b-822c-c5bc2850e1fc" InformativeScreenshot="ec58034c5badb581ea96d548a3f310ec.png" Reference="F5Zsp2T990mpxSexIPd5BA/bMkiT7wnMUyWf0lE1R2TpA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Bank Account' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
               </uix:NTypeInto.Target>
               <uix:NTypeInto.VerifyOptions>
                 <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">

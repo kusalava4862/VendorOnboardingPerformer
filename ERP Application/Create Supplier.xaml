@@ -1,0 +1,381 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Create_Supplier" this:Create_Supplier.in_SupplierName="Sample Supplier Name" this:Create_Supplier.in_SupplierGroup="Raw Material" this:Create_Supplier.in_BillingCurrency="INR" this:Create_Supplier.in_CompanyBankAccount="Sample Account - CITI Bank" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_SupplierName" Type="InArgument(x:String)" />
+    <x:Property Name="in_SupplierGroup" Type="InArgument(x:String)" />
+    <x:Property Name="in_BillingCurrency" Type="InArgument(x:String)" />
+    <x:Property Name="in_CompanyBankAccount" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1488,3769</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Create_Supplier_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Create_Supplier" sap:VirtualizedContainerService.HintSize="1112,3704" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Suppliers Screen" sap:VirtualizedContainerService.HintSize="1050,1151" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="714f7736-a5bb-4de8-a45b-1fa9da2b03b0" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,862" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State 'Add Supplier'" sap:VirtualizedContainerService.HintSize="954,775" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,533" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add Supplier'" sap:VirtualizedContainerService.HintSize="388,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="714f7736-a5bb-4de8-a45b-1fa9da2b03b0" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/supplier" CVScreenId="e3d06b05-a71d-481c-9062-a9c26a1daf3b" ContentHash="zGX86LpA_UmYU0fF1BZdvA" CvElementArea="1473, 208, 127, 33" CvType="Button" DesignTimeRectangle="1475, 211, 123, 28" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='page-List/Supplier/List' tag='BUTTON' visibleinnertext='Add Supplier' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-List/Supplier/List' tag='BUTTON' visibleinnertext='Add Supplier' type='' class='btn btn-primary btn-sm primary-action' aaname=' &amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;  Add Supplier ' check:text='Add Supplier' /&gt;" Guid="1432f261-30ca-49a3-971d-508837ce5a04" InformativeScreenshot="d3c7e0312d85122cba5889e448579eda.png" Reference="F5Zsp2T990mpxSexIPd5BA/KCyldMpfXE6ar1YqFXsvLQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Supplier' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Edit Full Form''" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="714f7736-a5bb-4de8-a45b-1fa9da2b03b0" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/supplier" CVScreenId="6c74ee9b-505c-47f1-b9d8-b7a493719738" ContentHash="EJU8bAYp0k2dPhlFfcmSoQ" CvElementArea="699, 490, 113, 33" CvTextArea="709, 501, 94, 13" CvTextArgument="Edit Full Form" CvType="Button" DesignTimeRectangle="702, 493, 109, 29" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' visibleinnertext='Edit Full Form' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' visibleinnertext='Edit Full Form' type='' class='btn btn-secondary btn-sm ' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Edit Full Form &amp;#x9;&amp;#x9;&amp;#x9;' check:text='Edit Full Form' /&gt;" Guid="33406d82-c40e-42f8-b0a4-0a8069a6c648" InformativeScreenshot="cde9168cbe469d1b0521f94a4cbaa9c5.png" Reference="F5Zsp2T990mpxSexIPd5BA/iPhb1KXt2ESivGRR0PjQYg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Supplier' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,205" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw DisplayName="Throw (Create Supplier Failed)" Exception="[New ApplicationException(&quot;Create Supplier Screen Failed&quot;)]" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/supplier" CVScreenId="e3d06b05-a71d-481c-9062-a9c26a1daf3b" ContentHash="zGX86LpA_UmYU0fF1BZdvA" CvElementArea="1473, 208, 127, 33" CvType="Button" DesignTimeRectangle="1475, 211, 123, 28" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='page-List/Supplier/List' tag='BUTTON' visibleinnertext='Add Supplier' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-List/Supplier/List' tag='BUTTON' visibleinnertext='Add Supplier' type='' class='btn btn-primary btn-sm primary-action' aaname=' &amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;  Add Supplier ' check:text='Add Supplier' /&gt;" Guid="1432f261-30ca-49a3-971d-508837ce5a04" InformativeScreenshot="d3c7e0312d85122cba5889e448579eda.png" Reference="F5Zsp2T990mpxSexIPd5BA/KCyldMpfXE6ar1YqFXsvLQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Supplier' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="QAbpZ4aCiEOdV6AE89qLSg" IconBase64="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" InformativeScreenshot="0fff1145de500cf75db0019f0011e57c.jpg" Reference="F5Zsp2T990mpxSexIPd5BA/vfPGNx2Yg0ODA7rLAThrxg" Selector="&lt;html app='chrome.exe' title='Supplier' /&gt;" Title="Supplier" Url="https://erp.skillrpa.com/app/supplier" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="CreateSupplier Screen" sap:VirtualizedContainerService.HintSize="1050,2465" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="88bf0bf9-5242-4292-8e9c-5cada1cfc4dc" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2225" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Supplier Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[in_SupplierName]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="3c61bf54-27a7-4909-88e3-a51b7e843e83" ContentHash="A-xS9BeN3UupLM6HZfVxqw" CvElementArea="357, 343, 599, 35" CvType="InputBox" DesignTimeRectangle="359, 347, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='supplier-__details' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='supplier-__details' tag='INPUT' type='text' class='input-with-feedback form-control bold' aaname='' /&gt;" Guid="bbf63003-43f3-43dd-9e49-1a41652ff53a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAlYAAAAgCAYAAADQQTbqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHoSURBVHhe7d3NiqNAGIZR7/8iE3CnKEhyAc68Dp9ooj09Pe5yCg74U5X1Q8WYZj4Zz+dz7rpubtt2vt/v8+12AwD4SGmhNFHaKI10Nt7CKpOz8OhDAQC4La10FFi7sBqGYbeg7/t5mqb58XgsiwEAPlFaKE2UNtpuQKWdtmMNq21UZdHRhwIA8Fxa6SiulrDKhLo5juPbYgAA9tJM1U85X8OqtrTsVAEAfF/tXKWllrDKxbrwOhkAgK/VBlWOm/xs0G4VAMDP1K5VmqqpysqT7keTAQA4l4aqb/+aevmnVyoAAPy7NFRaKk3V5CCOJgIA8HfVU8IKAOA/CSsAgIsIKwCAiwgrAICLCCsAgIsIKwCAiwgrAICLCCsAgIsIKwCAiwgrAICLCCsAgIusYeVPmAEAfm73J8xt2y4n0zQdTgYA4FwaKi2Vpmq6rltO+r4/nAwAwLk0VFoqTdXkQlXW60QAAL5W3/7luJl/j7pg1woA4PtqtyotlbGEVW7kYozj+LYIAIC9NFP1U87XsMoYhmG9aecKAOBc7VRFGqrGGlYZ27jKllYW5Ul3r2IAAD5ZWihNlDaqR6heoypjF1YZWbxdAADAXlopzfQ63sKqRibnZ4NZWC8RBQD4RGmhNFHa6Cio/ox5/gU3Ow4gYRUvSQAAAABJRU5ErkJggg==" InformativeScreenshot="5083d77f38db24aee7d886d66bc967ab.png" Reference="F5Zsp2T990mpxSexIPd5BA/iyiIN4h6w0adqg3LjASpdw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Supplier - new-supplier-hpthqsyuom' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3c61bf54-27a7-4909-88e3-a51b7e843e83" CvTextArea="358, 323, 101, 16" CvTextArgument="Supplier Name *" CvType="Text" DesignTimeRectangle="359, 321, 100, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Supplier Name' parentid='supplier-__details' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Supplier Name' parentid='supplier-__details' tag='LABEL' type='' class='control-label reqd' check:text='Supplier Name' /&gt;" Guid="098362d2-b43e-40e4-bdc2-0f0cca726eb1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAYCAYAAAAWPrhgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATVSURBVGhD7Zjfa9tWFMf3N+pFEDAMQ0AMagomUFFYCIg9mFCRUg+CDXZYXUNwH1SI6IMLwWHx2BCkChQXgkdwwShzLLxqZKiG786VryxZVuMfSTM96AMt9+Zwdc8933POvcl3SEk0qUAJJxUo4aQCJZxUoISTCpRw5gSyuwb0lyWUyg00P1r8pw/AjQXzjy5sNnY65EMLvRvPcmfYmYzzHhw+93H7Jv3cgsvn/yduv4PP/X/5LCAkkAuzIkHcyEMtM4GKUCQR4k4TDyKTpUMWSjC9cZP2VtAceJY7Y+4LEIQMisasRNaRDOGJ/jDn+xrDP/H5aoybkwquT0f4cnUBZ8htRCDQqAVF2EbTS2GO04YqZlD9yOffkrBA9wwTKK8oyG7S90NVmQSB3MtTDKslDOsVDOqvMKi+xugyqKRAoAEL0Db0SNa6jgN3PBl3XkoovAspOGii8EMNnem4ivZ5DfL3IgQSNvesBYuvXWgPCxT+LmNsw6jIyIhUCbROrhiw/XUfapB2NeiVHERBhh4TbSaQfNRF+5mIbNmctrSoQA75tp0l3wQB4iMFjQ9+xdlo7kqoHrdRfMTsInIVE06/BZXPpd3QWQjnQuc29i0V+kW0wfpQ9Zy9xuD5Hv56TkKdXeELtzBCLc6BWWYtLgel3oTZpd4c2pAxOWgoAjNtiY3J0RfkKIuA24P2lAJywMO8lD38raCaOgdZZPd4AMYWWns099edlSgIWagndMeMgmQKM/Xbpi4hZqcdYUYgu4ltUUaDB9IxSsiK5IP3PQv6Ewr0jo4e8902UNqk9v+0hu6I5qMuamSX3/LkZftshL510YC8oaAV7k4c91zDtfYe//x+6Inzt/YLhudxFcSxuy00flaQZ5kkUsVQ5vnaLxYo0iIvG5DYIdl4KXvMmP4viZF1fQ15fx0TKK/d2qbCfltvZYiPG+hR4KMVRMk8xaV7sDCtyIlARcMzeURjYb3JQ9ifeGzTHpnKtP49jBchAWO4OX2F4ek1nwXMCRTGZSVMmaL+NmkKiwXyg8pxWsEhV7HPjdklH/3H7UygBffIjN9UgTpVrvzGgvOrGqxlbbSuIMfa70YW0o955CIClc7YeMKcQExsLhCzzfsbid2SBAKxXv7T/Ist7Agb5+lgU+YCSWXMSt6HZbpQhMEycyl7jEBjA8XoujCrCsSgfWVqZ/pRsNZlYj2uwpzuQ5W7pkCsmjJ+C74jgUC8P6snwd3jXrKDZMixSQU5xwodSPPaA8YOunVyKpLpOXLMa4lkN/azEPfak0t5KXuMQGRt79FdtW/A4X6xYIhbXJR1BCJ6h/SoEKla+FrvbHTH+I8P+0RFZk2B8ElDjhJA+zSZwiGxqRMVjUkcV2GmxbGXR4F+95mWJT0Y1Hc9biVYe1Ay9FoiG7ufDopUAeGgFqEdF+hypQuUXlziFr3E/AtsKXucQAT94lrb4q2HWpAoFdDqc9uaAmHcQXWTzuGvZWfb8ffIIH9YhbquQIRF55TonBmJkpAeR/k6T8wVib+Dbhx6Ed2ithtjCwd17MKJ/hVgkX0ZXPLLWT0LV4L2iHsJrov7lZflstz6SFiJaNZHWWRPieX+BBqZ0MothBriLIvsKbHcn0Ap34RUoISTCpRwUoESTipQogH+A8Bz7CskT8tFAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Supplier Group'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="3c61bf54-27a7-4909-88e3-a51b7e843e83" ContentHash="cmsOFynjtEOZiG2fG_SPow" CvElementArea="982, 343, 597, 33" CvType="InputBox" DesignTimeRectangle="983, 347, 594, 28" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl aria-role='combobox' idx='2' parentid='supplier-__details' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' class='input-with-feedback form-control' parentid='supplier-__details' tag='INPUT' type='text' aaname='' /&gt;" Guid="44a87238-5321-4993-8b3a-d46aea032776" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAlYAAAAgCAYAAADQQTbqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVHhe7dvBboMwEEXR/v/vIswGiWpajUOIrQZNdj1XOjtg/WTg65AkSdJHMqwkSZI+1HRY7ft+bNt2rOt6LMsCAPCvxSaKbRQbadZwWMVNowcCALD8bKVRL8OqtTZ8AAAAD7GZrj0NKydVAADvu55c9WEV7wtHNwAAMHf+5qoPK6dVAAD3nU+t+rDy9x8AwH2xobI+rEYXAgDwt8ywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoyvqwWtd1eCEAAHOxobI+rLZtG14MAMBcbKisD6t934cXAwAwFxsq68MqcmoFAPC+82lV9DSsotba8EYAAB5iM117GVaRkysAgLnrSVU2HFZRvC+Mm/wtCADw+/dfbKPzN1XXpsNKkiRJ9zKsJEmSPtJxfAP3XsqNc5ucyQAAAABJRU5ErkJggg==" InformativeScreenshot="34d6bf72b27ba0c83b47ec99a03845f2.png" Reference="F5Zsp2T990mpxSexIPd5BA/NsvLZH64D0eHyuVJnTb8Eg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Supplier - new-supplier-hpthqsyuom' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3c61bf54-27a7-4909-88e3-a51b7e843e83" CvTextArea="982, 323, 93, 16" CvTextArgument="Supplier Group" CvType="Text" DesignTimeRectangle="983, 321, 92, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Supplier Group' class='control-label' parentid='supplier-__details' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Supplier Group' class='control-label' parentid='supplier-__details' tag='LABEL' type='' check:text='Supplier Group' /&gt;" Guid="3560f0a5-1675-43e6-a2f8-85723694bba1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAAYCAYAAAAF6fiUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQVSURBVGhD7Zfxh+NaFMff35hfLkNZYYll+0sNL/aH8Yj3Qz0bw3YZKZ1haxl9P2SZ2B+6jKynjxFWl9VlldHHKEOVyxDl+85NbprbNNNmpt0JKx9aSU6Sc+75nnvuzW+oKJVKgJKpBCiZSoCSqQQomUqAklkTYDYO4L1z4LR76H+fyqtPwN0Uw6sxZuKYjygGH5O7yLI3wpsR+n+LsXXhCV8LaSgRRYAQw44BdtCA3RZBtmAZDOyPPp5EhqkHU3MwjI775NtC/zay7AGO0VkDjBmw3oqxObAPGbTnTfg38paSSAWY+7C0I/SjEpTwAWxWw+l3ef4zUQXYM+EXBzWWFZRjeKJD+917mgK7h1SAW5GAI3iZqgs5Ryin6uidgeYnRaHbPpovuhgtj08x+NqF+Yyqi4Srv/YxTab5NrsqgPpewWKGoGNSErXoObMTpO3jWxfGXy68Th1MM+GtZZPDtzSYFzlpng/htl0MOR3L+LyPVuTH+RLfwn94sF9SvJoGph+h+1XcHLNTPiRKC6KKaIsWVIf1vo/heLpMfMLwJDOQlbYhjhmMN+QkpPNwAvcVg34m01jIrr4rnQ2jMx36sQx+MYV/TOfJc1TdmqbD/jwBn6fFkjKEoxnoXcvT+5DxmecjTJP3zKgrMB3OVZxk/qMHk9WX79opH5KcRdhH762Fhi5UI4UvxiRNzHaHmRZ23YPBHmLPOaZ/h2Weu3HRSJ4TAjTcDW1ECJCZGWLWvDDkrxm3pshnC4Ei4OyjCe31gFbHlMm5gZpM4k75kKwJoBLe+LCfM9j/xiFsd7j6cnAfzWTwD7GvHVPrWftJuxBgYx8f4ZRaQNJSImZjBFcB/Xo42hDf2niJ6QWJchLftVM+JKkAoir+XN/xqE7EcePDJocW/HlkiRGVmlRVIXtO8IsArexzKlsFIAk6NTCq5LR7S6gi65qNgdjuqj4l0w+0c5LJThAzgLXjazvlQ5IKIPud/Tnt/eG1Sz2vRtUTzwB+adFgXUyEfcExfk/VsOJQQ52mZzRQsge0y2DHcgoXsucIQNbBMfXOkwBcxiWqkB3KpBcQAJzaEM3kRjuI+zERz26K53wSX1jxKRHXmAn3P3k+p2J4pi93hTvlQ7LSgsSK36S9/3Ka04Jsf5IBCmgB9CyqJmET68NZixRVHbbgXjahM/p+oJ0EO6QdQVJ2hex5AhD0YdYV+/YDHQa1E2Yo+/ciAghuA5y+krEnY1PWtzWfktk/LdQPGGo6PSvGfKl42iUfkvw14I7TjkLVKUOYY1MHsAjBs1+x2+xFCCkuviGuIgjfj3hHmLvDkjwmH5KNi/CDuKeClmyz/2oUHO/+BIg+anwoDWuVbfZfjYLj3Z8AFY+iEqBkKgFKphKgZCoBSgX4H763/q59O7AyAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Raw Material'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="88bf0bf9-5242-4292-8e9c-5cada1cfc4dc" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/supplier/new-supplier-zytfnpwnsz" CVScreenId="5f20999c-8b5b-41b8-8637-211eda738f48" CvTextArea="994, 645, 83, 12" CvTextArgument="Raw Material" CvType="Text" DesignTimeRectangle="8, 147, 0, 0" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='P' visibleinnertext='{0}' /&gt;&quot;, in_SupplierGroup)]" FuzzySelectorArgument="&lt;webctrl tag='P' visibleinnertext='Raw Material' type='' class='' aaname='' check:text='Raw Material' /&gt;" Guid="70d45b9a-7fea-4445-a942-bb83a409c30d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Supplier - new-supplier-*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Visible" WaitForReadyArgument="Complete" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Billing Currency'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="88bf0bf9-5242-4292-8e9c-5cada1cfc4dc" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="3c61bf54-27a7-4909-88e3-a51b7e843e83" ContentHash="Nvrs29_yIkiOCIzCbAWhVA" CvElementArea="358, 581, 596, 32" CvType="InputBox" DesignTimeRectangle="359, 584, 594, 28" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl aria-role='combobox' idx='3' parentid='supplier-__details' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' class='input-with-feedback form-control' parentid='supplier-__details' tag='INPUT' type='text' aaname='' /&gt;" Guid="8fe69ba2-98ee-4386-bb02-ea2c789e2447" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAlYAAAAgCAYAAADQQTbqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVHhe7dvBboMwEEXR/v/vIswGiWpajUOIrQZNdj1XOjtg/WTg65AkSdJHMqwkSZI+1HRY7ft+bNt2rOt6LMsCAPCvxSaKbRQbadZwWMVNowcCALD8bKVRL8OqtTZ8AAAAD7GZrj0NKydVAADvu55c9WEV7wtHNwAAMHf+5qoPK6dVAAD3nU+t+rDy9x8AwH2xobI+rEYXAgDwt8ywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoyvqwWtd1eCEAAHOxobI+rLZtG14MAMBcbKisD6t934cXAwAwFxsq68MqcmoFAPC+82lV9DSsotba8EYAAB5iM117GVaRkysAgLnrSVU2HFZRvC+Mm/wtCADw+/dfbKPzN1XXpsNKkiRJ9zKsJEmSPtJxfAP3XsqNc5ucyQAAAABJRU5ErkJggg==" InformativeScreenshot="7cf4fa877e5a0e6949488ff8db8edb5a.png" Reference="F5Zsp2T990mpxSexIPd5BA/moSNmSvCr0CE1cy9o-vUPA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Supplier - new-supplier-hpthqsyuom' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3c61bf54-27a7-4909-88e3-a51b7e843e83" CvTextArea="358, 561, 98, 16" CvTextArgument="Billing Currency" CvType="Text" DesignTimeRectangle="359, 559, 97, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Billing Currency' class='control-label' parentid='supplier-__details' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Billing Currency' class='control-label' parentid='supplier-__details' tag='LABEL' type='' check:text='Billing Currency' /&gt;" Guid="e3c6d55e-5893-484d-8148-a9e1283a21e4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGUAAAAXCAYAAAASloEFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASJSURBVGhD7ZjvZyNbGMfv3zhvDmWoUEZplLhs5EVcoi9iZSzNi5WQXDaWymVTOtaVUhOVUkOl1JQVrpQallGGEOF7n3PmZOfM5Fe7Wsmu+RBy5pnz83ueH8kfSNk6UlG2kFSULSQVZQtJRdlCUlG2EEUUH8NrB476ufcwmUoz57GP1j8DepPwh3Buyc6/jz0MrofhcwRwz1qw/xOWt4HPTXPU6jW0z114bzjVJlBEGaCm6cgf18Rma/UqSgcMrGDBk8JMbpvIHrbg8kO4qUF7RzZu8CzktRqNIBrolgyUzkOJXhvvooyMxpA9qop1Vo+yYCyH5l0g3/j1SYiShyVOWTIdorWvoerItspSUd4QMU8GtZu4AEHPBNttwlW9+hdmtSh05J2cIspdC8b7bhimlorio/veQOtONOB+MlA+7aNT0sE0DezAhP0Y2gSPNsxDbmPQC+SFV8ocCdy/6b2Pi6Qfwa43YT/w7/H5Beq6v3dR3m/C+lqCzjQSeGbvwGqQ1/04gwDDMxPZHQ0a98yKheHsLsgx7MtqaGcUYT671CMi+GbBpEij8T1nimjdcqsPu2LA7Km7C59Vr6LeCVHI+G+UU7r1HPS/ovAVE2JF+LLeyc0Sg4+0qD0uBMW8qQ/3cz7qN6Y59xjypyORuyYkUNWgjczsMcJxzct1CSQ+v2BurTTnCeWipyDMmdxOHmj2RgjkM/+iRKG7jeET2ack0EkerGSHwipj+HLd5i6L5vRtlBh59HV4+MG3NvIsFHtyRV6t7u+hgywz0R/LNpEQhW6rYcDYl59MJn5DflIU42QUNjjqu7c1sP023fMI/7y4UpTYYS/kOaJU4cwuGofbcx1lTh9WQac8JZucqYMq96Lv9F2MET9Ivs/8WTiC/5UuXqUfFkGSwPfgB/xi0jmzLDrCq8nHv2ShN9ywIVkTvgI4x3rU6SdFmS1WoLzrndHik+FIHTdGALuUGGshzxFltlbJ3Jz8LHjYSn7k+SwYQ93n3J4TuA1dXlQXzd2E+MQaUeTBLRLiFUSBU03c0FWeIm2H5FnqLecENsra7PaF88eKkxeLwnMpHda9bCZZI4p3mpvPfWMZKjk8ZPHC5L4J/bATixSclaJMvAGaOUpyX2S31xZl3IdJsdfsSbu3KqcQUxq7wJD5YEe/TXwXbXrGPvR/JFpeEOjHDgJ+CNTHrugvFCUMK6xAByYPMqB3MjsU9vi8a0QRdsohsxCFJ8o5tM9I5BE6VNxkD6hAWOBRCVES7rqTQbHhiGQmeG1RiFiV8idVX735A4oRDGFVeJUk18grH3WNnIAukxxT28mh1Si/WBQhJlVxjMY3MjQWH2f2W2idKIQvKjPK0RmqGBlVoBfxHQmv14roLigzFVE2w4QnP4XJpTmXJBcynVCltOatydpR1vOceZYh+iphS4GLwr170cibFWVKiY5K4lzdxtALMLrpoEzt0sWC6/O7IP6Souiwp4azOBv3FDwN0f1kokgleO6IftTdLA1cvwcPNpr8Pztn+cXbvCgpc6SibCGpKFtIKsrWAfwPDGA5oPdsqooAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'AED'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="88bf0bf9-5242-4292-8e9c-5cada1cfc4dc" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/supplier/new-supplier-zytfnpwnsz" CVScreenId="0967be07-e719-48d6-b6ec-02993d0e92ab" CvTextArea="370, 627, 28, 12" CvTextArgument="AED" CvType="Text" DesignTimeRectangle="371, 625, 27, 16" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='STRONG' visibleinnertext='{0}' /&gt;&quot;, in_BillingCurrency)]" FuzzySelectorArgument="&lt;webctrl tag='STRONG' visibleinnertext='AED' type='' class='' aaname='AED' check:text='AED' /&gt;" Guid="4adb7ec6-f522-411b-976b-3b144dfe430d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Supplier - new-supplier-zytfnpwnsz' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Visible" WaitForReadyArgument="Complete" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Price List'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="88bf0bf9-5242-4292-8e9c-5cada1cfc4dc" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/supplier/new-supplier-oxerkocipa" CVScreenId="268df35e-c266-4e23-a826-d4c39031cab5" CvTextArea="982, 561, 58, 13" CvTextArgument="Price List" CvType="Text" DesignTimeRectangle="983, 559, 57, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Price List' class='control-label' parentid='supplier-__details' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Price List' class='control-label' parentid='supplier-__details' tag='LABEL' type='' check:innerText='Price List' /&gt;" Guid="b2559f10-b523-4c50-b6c3-090dd40948ba" InformativeScreenshot="2a97cf8e23aba6cf148d70b96187d594.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Supplier - new-supplier-oxerkocipa' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Default Company'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="88bf0bf9-5242-4292-8e9c-5cada1cfc4dc" Text="[in_CompanyBankAccount]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="3c61bf54-27a7-4909-88e3-a51b7e843e83" ContentHash="er1_Cv47ZE6ZZ4JFE63sBw" CvElementArea="356, 653, 599, 32" CvType="InputBox" DesignTimeRectangle="359, 656, 594, 28" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl aria-role='combobox' idx='4' parentid='supplier-__details' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' class='input-with-feedback form-control' parentid='supplier-__details' tag='INPUT' type='text' aaname='' /&gt;" Guid="8ef35715-7b6c-448f-a2a1-b7a23983d39c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAlYAAAAgCAYAAADQQTbqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVHhe7dvBboMwEEXR/v/vIswGiWpajUOIrQZNdj1XOjtg/WTg65AkSdJHMqwkSZI+1HRY7ft+bNt2rOt6LMsCAPCvxSaKbRQbadZwWMVNowcCALD8bKVRL8OqtTZ8AAAAD7GZrj0NKydVAADvu55c9WEV7wtHNwAAMHf+5qoPK6dVAAD3nU+t+rDy9x8AwH2xobI+rEYXAgDwt8ywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoygwrAICizLACACjKDCsAgKLMsAIAKMoMKwCAosywAgAoyvqwWtd1eCEAAHOxobI+rLZtG14MAMBcbKisD6t934cXAwAwFxsq68MqcmoFAPC+82lV9DSsotba8EYAAB5iM117GVaRkysAgLnrSVU2HFZRvC+Mm/wtCADw+/dfbKPzN1XXpsNKkiRJ9zKsJEmSPtJxfAP3XsqNc5ucyQAAAABJRU5ErkJggg==" InformativeScreenshot="9956a7fc7e886c70f755b01d1837ebfb.png" Reference="F5Zsp2T990mpxSexIPd5BA/RJTU81ZmX0qq_bDG6P5omQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Supplier - new-supplier-hpthqsyuom' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3c61bf54-27a7-4909-88e3-a51b7e843e83" CvTextArea="358, 632, 197, 13" CvTextArgument="Default Company Bank Account" CvType="Text" DesignTimeRectangle="359, 630, 195, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Default Company Bank Account' class='control-label' parentid='supplier-__details' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Default Company Bank Account' class='control-label' parentid='supplier-__details' tag='LABEL' type='' check:text='Default Company Bank Account' /&gt;" Guid="826cf910-49eb-4cce-baef-5bfc1eca2c8b" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'AdvancedMicro Components'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="88bf0bf9-5242-4292-8e9c-5cada1cfc4dc" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/supplier/new-supplier-zytfnpwnsz" CVScreenId="3ff4a851-9422-4e3d-ad29-34fc26384ced" CvTextArea="370, 698, 317, 13" CvTextArgument="AdvancedMicro Components - State Bank of India" CvType="Text" DesignTimeRectangle="371, 697, 316, 16" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='STRONG' visibleinnertext='{0}*' /&gt;&quot;, in_CompanyBankAccount)]" FuzzySelectorArgument="&lt;webctrl tag='STRONG' visibleinnertext='AdvancedMicro Components -*' type='' class='' aaname='AdvancedMicro Components - State Bank of India' check:text='AdvancedMicro Components - State Bank of India' /&gt;" Guid="923f9870-be74-4f07-b96f-817b6fa4193e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Supplier - new-supplier-zytfnpwnsz' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Visible" WaitForReadyArgument="Complete" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/supplier/new-supplier-hpthqsyuom" CVScreenId="9ecf68e6-3edd-4400-a9bb-1e441d665a00" ContentHash="PKv_W3XJXkKJcqX7EvBj3g" CvElementArea="1546, 209, 54, 32" CvTextArea="1555, 217, 35, 14" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1548, 211, 50, 28" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Save' parentid='page-Supplier' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Save' parentid='page-Supplier' tag='BUTTON' type='' class='btn btn-primary btn-sm primary-action' check:innerText='Save' /&gt;" Guid="5891b188-0758-4044-9d14-89ad6e48b16d" InformativeScreenshot="3be7f2f435e38c20316a6273cc22e50e.png" Reference="F5Zsp2T990mpxSexIPd5BA/alTZ2cQOUECJKtDNMYMgVQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Supplier - new-supplier-hpthqsyuom' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="bdD-uv_pYkmIQrZ_TTfA0g" IconBase64="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" InformativeScreenshot="f3b98e2de88e8162c0adab2a0ff3a7d0.jpg" Reference="F5Zsp2T990mpxSexIPd5BA/zaTI5aic-k2sqotoAnxvRA" Selector="&lt;html app='chrome.exe' title='New Supplier - new-supplier-*' /&gt;" Title="New Supplier - new-supplier-hpthqsyuom" Url="https://erp.skillrpa.com/app/supplier/new-supplier-hpthqsyuom" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Default Company",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "RJTU81ZmX0qq_bDG6P5omQ",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/RJTU81ZmX0qq_bDG6P5omQ",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/zaTI5aic-k2sqotoAnxvRA",
+  "Created": "2024-07-12T03:43:28.0831238Z",
+  "Updated": "2024-07-12T03:43:28.0831238Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

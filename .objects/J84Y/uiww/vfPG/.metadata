@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Suppliers Screen",
+  "Type": "Screen",
+  "Id": "vfPGNx2Yg0ODA7rLAThrxg",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/vfPGNx2Yg0ODA7rLAThrxg",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/uiwwVs9pXUuRNSBNvHUrrw",
+  "Created": "2024-07-12T03:36:26.6989921Z",
+  "Updated": "2024-07-12T03:36:36.4824185Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

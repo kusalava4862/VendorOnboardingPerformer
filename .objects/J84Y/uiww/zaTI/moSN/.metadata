@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Billing Currency",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "moSNmSvCr0CE1cy9o-vUPA",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/moSNmSvCr0CE1cy9o-vUPA",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/zaTI5aic-k2sqotoAnxvRA",
+  "Created": "2024-07-12T03:43:28.0618796Z",
+  "Updated": "2024-07-12T03:43:28.0618796Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

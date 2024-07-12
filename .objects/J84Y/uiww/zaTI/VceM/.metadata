@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Accounting",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "VceMJ5SHHkiDaohCaLR5Bg",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/VceMJ5SHHkiDaohCaLR5Bg",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/zaTI5aic-k2sqotoAnxvRA",
+  "Created": "2024-07-12T03:43:27.9527224Z",
+  "Updated": "2024-07-12T03:43:27.9527224Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

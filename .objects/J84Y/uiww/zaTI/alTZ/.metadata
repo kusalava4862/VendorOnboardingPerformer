@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Save",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "alTZ2cQOUECJKtDNMYMgVQ",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/alTZ2cQOUECJKtDNMYMgVQ",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/zaTI5aic-k2sqotoAnxvRA",
+  "Created": "2024-07-12T03:47:48.0144911Z",
+  "Updated": "2024-07-12T03:48:11.6554446Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

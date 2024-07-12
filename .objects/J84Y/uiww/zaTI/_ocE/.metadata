@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Settings",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "_ocE1tT0Ck-A5NMA4pZWuQ",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/_ocE1tT0Ck-A5NMA4pZWuQ",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/zaTI5aic-k2sqotoAnxvRA",
+  "Created": "2024-07-12T03:43:27.9974316Z",
+  "Updated": "2024-07-12T03:43:27.9974316Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

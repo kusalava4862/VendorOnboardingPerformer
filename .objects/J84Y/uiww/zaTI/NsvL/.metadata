@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Supplier Group",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "NsvLZH64D0eHyuVJnTb8Eg",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/NsvLZH64D0eHyuVJnTb8Eg",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/zaTI5aic-k2sqotoAnxvRA",
+  "Created": "2024-07-12T03:43:28.0407535Z",
+  "Updated": "2024-07-12T03:43:28.0407535Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

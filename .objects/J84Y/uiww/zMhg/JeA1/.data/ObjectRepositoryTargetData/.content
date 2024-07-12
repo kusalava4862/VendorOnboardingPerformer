@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="mY5K2zIP-0KVHsaNnaD0Kg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/account/new-account-bkeuphsojp" CVScreenId="8adfad6d-2589-456f-b9a1-fa88ae815c5d" CvElementArea="1546, 209, 54, 32" CvTextArea="1555, 217, 35, 14" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1548, 211, 50, 28" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Save' parentid='page-Account' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Save' parentid='page-Account' tag='BUTTON' type='' class='btn btn-primary btn-sm primary-action' check:text='Save' /&gt;" Guid="5972b34d-2d9a-4957-a928-c0001fa13830" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Account' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="aa0383b049d8a08677383a9ab2a0a89b.png" xmlns="">04W1YuGc240ebrsEtNmNLQw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

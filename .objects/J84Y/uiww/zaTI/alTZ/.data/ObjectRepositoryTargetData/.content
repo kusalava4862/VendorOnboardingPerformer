@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PKv_W3XJXkKJcqX7EvBj3g" Reference="F5Zsp2T990mpxSexIPd5BA/alTZ2cQOUECJKtDNMYMgVQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/supplier/new-supplier-hpthqsyuom" CVScreenId="9ecf68e6-3edd-4400-a9bb-1e441d665a00" CvElementArea="1546, 209, 54, 32" CvTextArea="1555, 217, 35, 14" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1548, 211, 50, 28" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Save' parentid='page-Supplier' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Save' parentid='page-Supplier' tag='BUTTON' type='' class='btn btn-primary btn-sm primary-action' check:innerText='Save' /&gt;" Guid="5891b188-0758-4044-9d14-89ad6e48b16d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Supplier - new-supplier-hpthqsyuom' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3be7f2f435e38c20316a6273cc22e50e.png" xmlns="">0VvA6WtZVhEaO7Wz3-iimEw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

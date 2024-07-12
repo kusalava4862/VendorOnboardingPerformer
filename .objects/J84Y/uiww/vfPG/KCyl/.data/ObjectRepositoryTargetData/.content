@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zGX86LpA_UmYU0fF1BZdvA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/supplier" CVScreenId="e3d06b05-a71d-481c-9062-a9c26a1daf3b" CvElementArea="1473, 208, 127, 33" CvType="Button" DesignTimeRectangle="1475, 211, 123, 28" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='page-List/Supplier/List' tag='BUTTON' visibleinnertext='Add Supplier' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-List/Supplier/List' tag='BUTTON' visibleinnertext='Add Supplier' type='' class='btn btn-primary btn-sm primary-action' aaname=' &amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;  Add Supplier ' check:text='Add Supplier' /&gt;" Guid="1432f261-30ca-49a3-971d-508837ce5a04" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Supplier' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d3c7e0312d85122cba5889e448579eda.png" xmlns="">0h7RqqyQDYkSf0yM8QtCOTg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Contact & Address",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "BQMFQ26ZF0WAf9eDfqRDUw",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/BQMFQ26ZF0WAf9eDfqRDUw",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/zaTI5aic-k2sqotoAnxvRA",
+  "Created": "2024-07-12T03:43:27.9278654Z",
+  "Updated": "2024-07-12T03:43:27.9278654Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

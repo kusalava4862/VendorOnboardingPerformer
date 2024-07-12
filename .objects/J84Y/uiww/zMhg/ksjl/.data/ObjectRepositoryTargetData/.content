@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ciegl-9tPUWTZPfsbcf5gw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/account/new-account-bkeuphsojp" CVScreenId="9d427385-f4b6-4db1-9740-1916b4bee52e" CvElementArea="981, 301, 597, 32" CvType="InputBox" DesignTimeRectangle="983, 304, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='page-Account' tag='DIV' visibleinnertext='Parent Account*' /&gt;&lt;webctrl aria-role='combobox' parentid='page-Account' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-Account' tag='DIV' visibleinnertext='Parent Account*' /&gt;&lt;webctrl aria-role='combobox' parentid='page-Account' tag='INPUT' type='text' class='input-with-feedback form-control bold' aaname='' /&gt;" Guid="1d489520-dd85-4289-9847-970302e3b2f5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Account' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c7dd899cfcf9a67274aab58e7fe04f76.png" xmlns="">0gz7poTvvG0mo75FGEsebMg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

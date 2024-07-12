@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Add Supplier",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "KCyldMpfXE6ar1YqFXsvLQ",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/KCyldMpfXE6ar1YqFXsvLQ",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/vfPGNx2Yg0ODA7rLAThrxg",
+  "Created": "2024-07-12T03:39:36.5552282Z",
+  "Updated": "2024-07-12T03:40:14.9205851Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
