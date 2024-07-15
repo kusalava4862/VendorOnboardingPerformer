@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="U98IbGyVnkKEuK1oxx-sTw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/address/new-address-kmlzpevonr" CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvElementArea="349, 873, 597, 33" CvType="InputBox" DesignTimeRectangle="351, 876, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='7' parentid='page-Address' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback form-control' aaname='' parentid='page-Address' tag='INPUT' type='text' /&gt;" Guid="dc76e047-a29c-4126-b1b0-012a5fcef0d2" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvTextArea="350, 852, 75, 13" CvTextArgument="Postal Code" CvType="Text" DesignTimeRectangle="351, 850, 74, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Postal Code' class='control-label' parentid='page-Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Postal Code' class='control-label' parentid='page-Address' tag='LABEL' type='' check:innerText='Postal Code' /&gt;" Guid="dd163225-ef84-464f-89f5-ea324789f424" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="596950bb229711f5b89ca8de73edebae.png" xmlns="">07TTOl-vdfEOUesh1vx4rGA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

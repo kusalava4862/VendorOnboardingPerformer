@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vteP8A_rOkyspRYBdVeJ_w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/address/new-address-kmlzpevonr" CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvElementArea="349, 730, 598, 33" CvType="InputBox" DesignTimeRectangle="351, 733, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='6' parentid='page-Address' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback form-control' parentid='page-Address' tag='INPUT' type='text' aaname='' /&gt;" Guid="a9a97af0-a12c-48b7-882f-7c786c4f69ca" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvTextArea="349, 709, 91, 14" CvTextArgument="State/Province" CvType="Text" DesignTimeRectangle="351, 707, 90, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='State/Province' class='control-label' parentid='page-Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='State/Province' class='control-label' parentid='page-Address' tag='LABEL' type='' check:innerText='State/Province' /&gt;" Guid="6dcd86bb-576c-4a7a-97b9-6973994d0f0a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4012505395558ae04ec1c0eed0907267.png" xmlns="">0YnpvjbKL-EalFQtbmcsEnQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

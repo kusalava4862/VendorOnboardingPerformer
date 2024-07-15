@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9bPVH0kWU0ONvOlQbRD7EQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/supplier/Sample%20Supplier%20Name" CVScreenId="0f961aa6-ac1d-4674-8470-891dd7a247bd" CvElementArea="572, 320, 18, 18" CvType="CheckBox" DesignTimeRectangle="574, 322, 14, 14" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl parentid='supplier-settings_tab' tag='INPUT' type='checkbox' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='supplier-settings_tab' tag='INPUT' type='checkbox' class='input-with-feedback' aaname='' /&gt;" Guid="75113bfc-99f4-4f4d-b5da-5c0a3600e2ba" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sample Supplier Name - Sample Supplier Name' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0f961aa6-ac1d-4674-8470-891dd7a247bd" CvTextArea="595, 322, 354, 12" CvTextArgument="Allow Purchase Invoice Creation Without Purchase Order" CvType="Text" DesignTimeRectangle="596, 319, 353, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl class='label-area' parentid='supplier-settings_tab' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='label-area' parentid='supplier-settings_tab' tag='SPAN' type='' aaname='Allow Purchase Invoice Creation Without Purchase Order' check:innerText='Allow Purchase Invoice Creation Without Purchase Order' /&gt;" Guid="1bf93249-0ede-441a-8536-cb9b7b0618da" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="62ff55d683dac6148102d9a59bf0a035.png" xmlns="">0XCb67_hK2UaXmCqtl-H2wA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

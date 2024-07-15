@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LrwkQOmXoEKfuGObiYdlYQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/supplier/Sample%20Supplier%20Name" CVScreenId="16b55f79-8283-4bb3-8326-b2b9e3f71734" CvTextArea="1055, 276, 55, 16" CvTextArgument="Settings" CvType="Text" DesignTimeRectangle="1056, 262, 54, 41" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='supplier-settings_tab-tab' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='supplier-settings_tab-tab' tag='A' type='' class='nav-link' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Settings &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Settings' /&gt;" Guid="a1247d8c-05a8-4600-8435-58ed8e01c324" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sample Supplier Name - Sample Supplier Name' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="23c1ce6dd82cfe41b7cdf0ecbf45d02c.png" xmlns="">0fM-a4-zRNEu6DAh_90y2Mw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

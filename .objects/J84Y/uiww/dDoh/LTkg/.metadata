@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Type Into 'Phone'",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "LTkg3TjpiEe6OPPAfoEl9g",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/LTkg3TjpiEe6OPPAfoEl9g",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/dDohydL7oU6LNQ1P4kLiEQ",
+  "Created": "2024-07-15T03:50:47.2455031Z",
+  "Updated": "2024-07-15T03:50:47.2455031Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

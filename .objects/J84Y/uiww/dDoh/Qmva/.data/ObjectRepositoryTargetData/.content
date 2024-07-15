@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Z9wqVhBRqEaqNdM5g5zuwQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/supplier/Sample%20Supplier%20Name" CVScreenId="37cbc19b-be5e-4590-9ce5-f3886fb599d0" CvElementArea="564, 344, 489, 32" CvType="InputBox" DesignTimeRectangle="566, 347, 486, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-role='combobox' parentid='supplier-accounting_tab' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' parentid='supplier-accounting_tab' tag='INPUT' type='text' class='input-with-feedback form-control' aaname='' /&gt;" Guid="106b64c3-e971-491e-bf79-ca18f3b7c7f4" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sample Supplier Name - Sample Supplier Name' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="37cbc19b-be5e-4590-9ce5-f3886fb599d0" CvTextArea="565, 323, 203, 16" CvTextArgument="Default Payment Terms Template" CvType="Text" DesignTimeRectangle="566, 321, 202, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='supplier-accounting_tab' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='supplier-accounting_tab' tag='LABEL' type='' class='control-label' aaname='Default Payment Terms Template' check:innerText='Default Payment Terms Template' /&gt;" Guid="1ca37223-c1d1-4a2f-ace1-843a0e5949e8" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2d181c7cf330ec6434f5717a6d7cf43b.png" xmlns="">0Seeh52Ck1UWhTvvis-qkCQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

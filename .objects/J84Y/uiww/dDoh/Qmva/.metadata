@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'Default Payment'",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "QmvaemrhA02cNFp5ld2Liw",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/QmvaemrhA02cNFp5ld2Liw",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/dDohydL7oU6LNQ1P4kLiEQ",
+  "Created": "2024-07-15T03:32:18.4202755Z",
+  "Updated": "2024-07-15T03:32:18.4202755Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

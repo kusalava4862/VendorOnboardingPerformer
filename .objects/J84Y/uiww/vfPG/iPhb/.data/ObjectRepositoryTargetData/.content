@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="EJU8bAYp0k2dPhlFfcmSoQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="6qOTWE3niU6qEfVWYlCpNw" Reference="F5Zsp2T990mpxSexIPd5BA/iPhb1KXt2ESivGRR0PjQYg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
     <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/supplier" CVScreenId="6c74ee9b-505c-47f1-b9d8-b7a493719738" CvElementArea="699, 490, 113, 33" CvTextArea="709, 501, 94, 13" CvTextArgument="Edit Full Form" CvType="Button" DesignTimeRectangle="702, 493, 109, 29" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' visibleinnertext='Edit Full Form' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' visibleinnertext='Edit Full Form' type='' class='btn btn-secondary btn-sm ' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Edit Full Form &amp;#x9;&amp;#x9;&amp;#x9;' check:text='Edit Full Form' /&gt;" Guid="33406d82-c40e-42f8-b0a4-0a8069a6c648" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Supplier' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="cde9168cbe469d1b0521f94a4cbaa9c5.png" xmlns="">0roGdmx225UibPRCaqPtHwA</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="cde9168cbe469d1b0521f94a4cbaa9c5.png" xmlns="">0o_HIKRGAoECbwheSSKfDFA</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

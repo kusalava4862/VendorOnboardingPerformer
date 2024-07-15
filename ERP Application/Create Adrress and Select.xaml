@@ -1,0 +1,405 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Create_Adrress_and_Select" this:Create_Adrress_and_Select.in_AddressTitle="Sample Supplier Name - Address" this:Create_Adrress_and_Select.in_AddressLine="125 Main St" this:Create_Adrress_and_Select.in_City="Kolkata" this:Create_Adrress_and_Select.in_State="West Bengal" this:Create_Adrress_and_Select.in_PostalCode="700101" this:Create_Adrress_and_Select.in_PhoneNumber="+91-9932-6521" this:Create_Adrress_and_Select.in_EmailAddress="akash@advancedmicro.com" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_AddressTitle" Type="InArgument(x:String)" />
+    <x:Property Name="in_AddressLine" Type="InArgument(x:String)" />
+    <x:Property Name="in_City" Type="InArgument(x:String)" />
+    <x:Property Name="in_State" Type="InArgument(x:String)" />
+    <x:Property Name="in_PostalCode" Type="InArgument(x:String)" />
+    <x:Property Name="in_PhoneNumber" Type="InArgument(x:String)" />
+    <x:Property Name="in_EmailAddress" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1794,4203</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Create_Adrress_and_Select_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Create_Adrress_and_Select" sap:VirtualizedContainerService.HintSize="512,4138" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Supplier Details Screen" sap:VirtualizedContainerService.HintSize="450,4050" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="f26c703d-8b9d-43d5-b585-20f8048b104a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,3810" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Contact &amp; Address''" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/supplier/Sample%20Supplier%20Name" CVScreenId="311a162b-eb1c-4f5e-96b1-6c73926fc17e" ContentHash="GZRuBRAMb0SIu_Bt8iDFhw" CvTextArea="795, 276, 124, 13" CvTextArgument="Contact &amp; Address" CvType="Text" DesignTimeRectangle="796, 262, 123, 41" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='supplier-contact_and_address_tab-tab' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='supplier-contact_and_address_tab-tab' tag='A' type='' class='nav-link' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Contact &amp;amp; Address &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Contact &amp;amp; Address' /&gt;" Guid="8f4b8b0f-d65b-49aa-a048-b969f4dba5b3" InformativeScreenshot="9587b14bd3b8b615d5578faa065f043d.png" Reference="F5Zsp2T990mpxSexIPd5BA/Mlt4jOroEE6RqjZz2qgqPQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sample Supplier Name - Sample Supplier Name' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'New Address''" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/supplier/Sample%20Supplier%20Name" CVScreenId="6fa4e732-9d28-4646-9e78-8c4071366383" ContentHash="g3537EbEd0u6SwAViDihkg" CvElementArea="565, 382, 110, 28" CvTextArea="573, 390, 93, 13" CvTextArgument="New Address" CvType="Button" DesignTimeRectangle="566, 385, 107, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='supplier-contact_and_address_tab' tag='BUTTON' aaname='*New Address*' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='supplier-contact_and_address_tab' tag='BUTTON' aaname='*New Address*' type='' class='btn btn-xs btn-default btn-address' check:text='New Address' /&gt;" Guid="a1be05c8-c695-4bac-9e28-97d7dc179680" InformativeScreenshot="b5245b9727e95d58616956b45ffaaf36.png" Reference="F5Zsp2T990mpxSexIPd5BA/IqLF4-c9c0G1Wr3uvWn5WQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sample Supplier Name - Sample Supplier Name' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address Title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Text="[in_AddressTitle]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/address/new-address-kmlzpevonr" CVScreenId="3e2d560c-dfd2-4553-8cf4-8a3114da26ed" ContentHash="xV1nMmuJq0yG1PUPsNbNrw" CvElementArea="349, 299, 598, 35" CvType="InputBox" DesignTimeRectangle="351, 304, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='page-Address' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-Address' tag='INPUT' type='text' class='input-with-feedback form-control' aaname='' /&gt;" Guid="64884d6d-f769-44ce-8e32-ef8bee88c201" InformativeScreenshot="1c55b768c1168ef4a80a579e038e04e7.png" IsResponsive="True" Reference="F5Zsp2T990mpxSexIPd5BA/Z_dt3wFf-US9qd9RoYut3Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="3e2d560c-dfd2-4553-8cf4-8a3114da26ed" CvTextArea="349, 281, 82, 12" CvTextArgument="Address Title" CvType="Text" DesignTimeRectangle="351, 278, 80, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Address Title' parentid='page-Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Address Title' parentid='page-Address' tag='LABEL' type='' class='control-label' check:innerText='Address Title' /&gt;" Guid="1dcb2f59-eb09-4a25-afd3-33809c6767e6" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address Line 1'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Text="[in_AddressLine]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/address/new-address-kmlzpevonr" CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" ContentHash="Fxetxw0hJEGIBDIjvJeLYQ" CvElementArea="349, 443, 598, 33" CvType="InputBox" DesignTimeRectangle="351, 447, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='2' parentid='page-Address' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback form-control bold' parentid='page-Address' tag='INPUT' type='text' aaname='' /&gt;" Guid="38966bc5-5663-4934-92a1-b453509c95ed" InformativeScreenshot="52085dbbb93c91e69befaa13a708328b.png" IsResponsive="True" Reference="F5Zsp2T990mpxSexIPd5BA/ajcc0EDO6kCgV54Uh0XuSA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvTextArea="349, 424, 100, 12" CvTextArgument="Address Line 1 *" CvType="Text" DesignTimeRectangle="351, 421, 98, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Address Line 1' parentid='page-Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Address Line 1' parentid='page-Address' tag='LABEL' type='' class='control-label reqd' check:innerText='Address Line 1' /&gt;" Guid="1197868c-b53e-4777-84fa-f3ccf94009e0" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'City/Town'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Text="[in_City]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/address/new-address-kmlzpevonr" CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" ContentHash="ChW3vNV5vkWBzgJabLM-Cg" CvElementArea="349, 587, 597, 33" CvType="InputBox" DesignTimeRectangle="351, 590, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='4' parentid='page-Address' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback form-control bold' parentid='page-Address' tag='INPUT' type='text' aaname='' /&gt;" Guid="57eea928-23f3-4798-bbb0-57cee866cfa6" InformativeScreenshot="c299ee652460425ea5c4b622c655679c.png" IsResponsive="True" Reference="F5Zsp2T990mpxSexIPd5BA/-vtk13jurUKzWvRVUXQrFw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvTextArea="350, 566, 72, 16" CvTextArgument="City/Town *" CvType="Text" DesignTimeRectangle="351, 564, 71, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='City/Town' parentid='page-Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='City/Town' parentid='page-Address' tag='LABEL' type='' class='control-label reqd' check:innerText='City/Town' /&gt;" Guid="09b0b12a-fa3b-40a0-8a2c-5e50bc3edef2" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'State/Province'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="DebuggerApi" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Text="[in_State]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/address/new-address-kmlzpevonr" CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" ContentHash="vteP8A_rOkyspRYBdVeJ_w" CvElementArea="349, 730, 598, 33" CvType="InputBox" DesignTimeRectangle="351, 733, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='6' parentid='page-Address' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback form-control' parentid='page-Address' tag='INPUT' type='text' aaname='' /&gt;" Guid="a9a97af0-a12c-48b7-882f-7c786c4f69ca" InformativeScreenshot="4012505395558ae04ec1c0eed0907267.png" IsResponsive="True" Reference="F5Zsp2T990mpxSexIPd5BA/AG4p3YWTkUapyPjHPjzaLQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvTextArea="349, 709, 91, 14" CvTextArgument="State/Province" CvType="Text" DesignTimeRectangle="351, 707, 90, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='State/Province' class='control-label' parentid='page-Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='State/Province' class='control-label' parentid='page-Address' tag='LABEL' type='' check:innerText='State/Province' /&gt;" Guid="6dcd86bb-576c-4a7a-97b9-6973994d0f0a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Postal Code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="DebuggerApi" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Text="[in_PostalCode]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/address/new-address-kmlzpevonr" CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" ContentHash="U98IbGyVnkKEuK1oxx-sTw" CvElementArea="349, 873, 597, 33" CvType="InputBox" DesignTimeRectangle="351, 876, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='7' parentid='page-Address' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback form-control' aaname='' parentid='page-Address' tag='INPUT' type='text' /&gt;" Guid="dc76e047-a29c-4126-b1b0-012a5fcef0d2" InformativeScreenshot="596950bb229711f5b89ca8de73edebae.png" IsResponsive="True" Reference="F5Zsp2T990mpxSexIPd5BA/8Vf6PwiVck2SzSGDbcqYYw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvTextArea="350, 852, 75, 13" CvTextArgument="Postal Code" CvType="Text" DesignTimeRectangle="351, 850, 74, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Postal Code' class='control-label' parentid='page-Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Postal Code' class='control-label' parentid='page-Address' tag='LABEL' type='' check:innerText='Postal Code' /&gt;" Guid="dd163225-ef84-464f-89f5-ea324789f424" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="DebuggerApi" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Text="[in_EmailAddress]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/address/new-address-kmlzpevonr" CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" ContentHash="oPpl6eja3UKRFPr0I754Ug" CvElementArea="973, 301, 598, 33" CvType="InputBox" DesignTimeRectangle="975, 304, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='8' parentid='page-Address' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback form-control' aaname='' parentid='page-Address' tag='INPUT' type='text' /&gt;" Guid="92d5622a-2e61-4b53-a7e0-4e6ec2e358d9" InformativeScreenshot="2b92e3f10207f970b7ca199b63a2c7e5.png" IsResponsive="True" Reference="F5Zsp2T990mpxSexIPd5BA/-JCvs_UbrUStT7pokQJErg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvTextArea="974, 280, 87, 13" CvTextArgument="Email Address" CvType="Text" DesignTimeRectangle="975, 278, 87, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Email Address' class='control-label' parentid='page-Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Email Address' class='control-label' parentid='page-Address' tag='LABEL' type='' check:innerText='Email Address' /&gt;" Guid="af7794fd-6e17-413a-89d1-14379bc6f39f" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Phone'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="DebuggerApi" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Text="[in_PhoneNumber]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/address/new-address-kmlzpevonr" CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" ContentHash="buwbI9OOMkqKYXWuN7Plqg" CvElementArea="973, 372, 598, 33" CvType="InputBox" DesignTimeRectangle="975, 375, 594, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='9' parentid='page-Address' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback form-control' aaname='' parentid='page-Address' tag='INPUT' type='text' /&gt;" Guid="4d0c677c-5920-403e-a24e-42d6ab3cbeb0" InformativeScreenshot="8c63f4cac497a3c3d7eea7bef5715937.png" IsResponsive="True" Reference="F5Zsp2T990mpxSexIPd5BA/LTkg3TjpiEe6OPPAfoEl9g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvTextArea="974, 353, 39, 12" CvTextArgument="Phone" CvType="Text" DesignTimeRectangle="975, 350, 38, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Phone' class='control-label' parentid='page-Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Phone' class='control-label' parentid='page-Address' tag='LABEL' type='' check:innerText='Phone' /&gt;" Guid="8238d2d4-0a6a-4961-a913-95e5d34d886d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Preferred Billing'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/address/new-address-kmlzpevonr" CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" ContentHash="HnkMMZPkeUSullepEp1ejQ" CvElementArea="973, 563, 18, 17" CvType="CheckBox" DesignTimeRectangle="975, 565, 14, 14" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl parentid='page-Address' tag='INPUT' type='checkbox' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-Address' tag='INPUT' type='checkbox' class='input-with-feedback' aaname='' /&gt;" Guid="5e076619-251a-4280-a5ac-38f7414866c7" InformativeScreenshot="2b94ed55d2b89605d513f52748e8c0d8.png" Reference="F5Zsp2T990mpxSexIPd5BA/Db2AOV-iMkSfr1c32dlKng" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvTextArea="996, 564, 155, 13" CvTextArgument="Preferred Billing Address" CvType="Text" DesignTimeRectangle="997, 562, 154, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl class='label-area' parentid='page-Address' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='label-area' parentid='page-Address' tag='SPAN' type='' aaname='Preferred Billing Address' check:innerText='Preferred Billing Address' /&gt;" Guid="2d7610bd-f8a3-43d5-9399-2d5b2ef381ab" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Preferred Shipping'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NCheck_2" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/address/new-address-kmlzpevonr" CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" ContentHash="92ZXSWamAU2QfQMNyk7icg" CvElementArea="973, 601, 18, 17" CvType="CheckBox" DesignTimeRectangle="975, 603, 14, 14" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl class='input-with-feedback' idx='2' parentid='page-Address' tag='INPUT' type='checkbox' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback' aaname='' parentid='page-Address' tag='INPUT' type='checkbox' /&gt;" Guid="d2913e4a-99f2-439a-b516-9d3443713f35" InformativeScreenshot="9af41e9a9e7c2a6f31df604e21de1b04.png" Reference="F5Zsp2T990mpxSexIPd5BA/5syW1V_zEEu5eb46ak6O-A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvTextArea="996, 602, 172, 13" CvTextArgument="Preferred Shipping Address" CvType="Text" DesignTimeRectangle="997, 600, 171, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Preferred Shipping Address' class='label-area' parentid='page-Address' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Preferred Shipping Address' class='label-area' parentid='page-Address' tag='SPAN' type='' check:innerText='Preferred Shipping Address' /&gt;" Guid="238dc96a-1bee-485b-983e-162e3e401767" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Address Save'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/address/new-address-upllbjxbye" CVScreenId="4c31a499-8d3b-4f6a-906d-658c1b7a3857" ContentHash="M1pspLAYlU6i33KiYlC2hg" CvElementArea="1538, 209, 54, 32" CvTextArea="1546, 217, 36, 14" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1540, 211, 50, 28" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Save' parentid='page-Address' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Save' parentid='page-Address' tag='BUTTON' type='' class='btn btn-primary btn-sm primary-action' check:innerText='Save' /&gt;" Guid="6c9370a5-ce55-4868-ba1e-d27b48c7930d" InformativeScreenshot="f93a679ec9019e6bf0ca99bb1a06da4a.png" Reference="F5Zsp2T990mpxSexIPd5BA/kXeC4J82C0-lEgTW7pgwOA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Supplier Primary Address'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/supplier/Sample%20Supplier%20Name" CVScreenId="e658cd6f-c769-4984-9470-a08eed42b5c3" ContentHash="SlSsLxFCG0i4evLFQ-KAQw" CvElementArea="563, 672, 491, 31" CvType="InputBox" DesignTimeRectangle="566, 674, 486, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-role='combobox' parentid='supplier-contact_and_address_tab' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' parentid='supplier-contact_and_address_tab' tag='INPUT' type='text' class='input-with-feedback form-control' aaname='' /&gt;" Guid="cbfad5c2-a8b0-490c-b15d-3a038880e49f" InformativeScreenshot="0442e81f460fc541283df410448febe8.png" IsResponsive="True" Reference="F5Zsp2T990mpxSexIPd5BA/lHF5JreYO0e12T93FaYZ7Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sample Supplier Name - Sample Supplier Name' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="e658cd6f-c769-4984-9470-a08eed42b5c3" CvTextArea="564, 652, 157, 15" CvTextArgument="Supplier Primary Address" CvType="Text" DesignTimeRectangle="566, 649, 155, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='supplier-contact_and_address_tab' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='supplier-contact_and_address_tab' tag='LABEL' type='' class='control-label' aaname='Supplier Primary Address' check:innerText='Supplier Primary Address' /&gt;" Guid="c1b87f9f-037e-43a2-aeb2-8388c819fd5e" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sample Supplier'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/supplier/Sample%20Supplier%20Name" CVScreenId="c0aefaf6-e7a1-4d86-81d6-0ce58ad35f83" CvTextArea="624, 709, 189, 13" CvTextArgument="if the chosen address is edited" CvType="Text" DesignTimeRectangle="578, 715, 253, 16" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='STRONG' aaname='{0}-*' /&gt;&quot;, in_AddressTitle)]" FuzzySelectorArgument="&lt;webctrl tag='STRONG' aaname='Sample Supplier Name - Address-*' type='' class='' check:text='Sample Supplier Name - Address-Billing' /&gt;" Guid="f766b052-aaaf-4c03-b2bc-e5bdf42a2e05" InformativeScreenshot="45b92df7384b3466ec2a3dddb7eb6a7b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sample Supplier Name - Sample Supplier Name' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f26c703d-8b9d-43d5-b585-20f8048b104a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.skillrpa.com/app/supplier/Sample%20Supplier%20Name" CVScreenId="0f961aa6-ac1d-4674-8470-891dd7a247bd" ContentHash="T6u31-eN7k-ICQRi-NpX2g" CvElementArea="1546, 208, 54, 33" CvTextArea="1555, 217, 35, 14" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1548, 211, 50, 28" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Save' parentid='page-Supplier' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Save' parentid='page-Supplier' tag='BUTTON' type='' class='btn btn-primary btn-sm primary-action' check:innerText='Save' /&gt;" Guid="0ea0fd49-fec0-474d-8498-4789e37d25c9" InformativeScreenshot="6ad09dd1af46b3de48f32533701de6e5.png" Reference="F5Zsp2T990mpxSexIPd5BA/QM3GBIPFQEOQLvuF5LsLqA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sample Supplier Name - Sample Supplier Name' /&gt;" SearchSteps="Selector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="1odYahqJ60myHk5VOLtAoA" IconBase64="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" InformativeScreenshot="c5611db8d7a0cdeeff61515e0ef02c13.jpg" Reference="F5Zsp2T990mpxSexIPd5BA/dDohydL7oU6LNQ1P4kLiEQ" Selector="&lt;html app='chrome.exe' url='https://erp.skillrpa.com/app/supplier/*' /&gt;" Title="Sample Supplier Name - Sample Supplier Name" Url="https://erp.skillrpa.com/app/supplier/Sample%20Supplier%20Name" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

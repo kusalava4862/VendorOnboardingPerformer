@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'Settings'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "FXzcFlHH5EyDil6jEegphg",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/FXzcFlHH5EyDil6jEegphg",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/dDohydL7oU6LNQ1P4kLiEQ",
+  "Created": "2024-07-15T03:30:14.887939Z",
+  "Updated": "2024-07-15T03:30:14.887939Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

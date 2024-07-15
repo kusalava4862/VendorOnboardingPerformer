@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'Contact & Address'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Mlt4jOroEE6RqjZz2qgqPQ",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/Mlt4jOroEE6RqjZz2qgqPQ",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/dDohydL7oU6LNQ1P4kLiEQ",
+  "Created": "2024-07-15T03:50:33.603928Z",
+  "Updated": "2024-07-15T03:50:33.603928Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

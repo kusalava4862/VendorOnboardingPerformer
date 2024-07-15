@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="g3537EbEd0u6SwAViDihkg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/supplier/Sample%20Supplier%20Name" CVScreenId="6fa4e732-9d28-4646-9e78-8c4071366383" CvElementArea="565, 382, 110, 28" CvTextArea="573, 390, 93, 13" CvTextArgument="New Address" CvType="Button" DesignTimeRectangle="566, 385, 107, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='supplier-contact_and_address_tab' tag='BUTTON' aaname='*New Address*' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='supplier-contact_and_address_tab' tag='BUTTON' aaname='*New Address*' type='' class='btn btn-xs btn-default btn-address' check:text='New Address' /&gt;" Guid="a1be05c8-c695-4bac-9e28-97d7dc179680" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sample Supplier Name - Sample Supplier Name' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b5245b9727e95d58616956b45ffaaf36.png" xmlns="">0sucWO4Hnp0W-161isNUAbg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

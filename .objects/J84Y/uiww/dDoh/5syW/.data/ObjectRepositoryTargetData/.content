@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="92ZXSWamAU2QfQMNyk7icg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/address/new-address-kmlzpevonr" CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvElementArea="973, 601, 18, 17" CvType="CheckBox" DesignTimeRectangle="975, 603, 14, 14" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl class='input-with-feedback' idx='2' parentid='page-Address' tag='INPUT' type='checkbox' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback' aaname='' parentid='page-Address' tag='INPUT' type='checkbox' /&gt;" Guid="d2913e4a-99f2-439a-b516-9d3443713f35" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvTextArea="996, 602, 172, 13" CvTextArgument="Preferred Shipping Address" CvType="Text" DesignTimeRectangle="997, 600, 171, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Preferred Shipping Address' class='label-area' parentid='page-Address' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Preferred Shipping Address' class='label-area' parentid='page-Address' tag='SPAN' type='' check:innerText='Preferred Shipping Address' /&gt;" Guid="238dc96a-1bee-485b-983e-162e3e401767" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9af41e9a9e7c2a6f31df604e21de1b04.png" xmlns="">0WVXMU3M7JkSMEkku9XJVnA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

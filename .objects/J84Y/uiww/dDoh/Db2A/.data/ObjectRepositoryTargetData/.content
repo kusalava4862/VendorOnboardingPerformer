@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HnkMMZPkeUSullepEp1ejQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/address/new-address-kmlzpevonr" CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvElementArea="973, 563, 18, 17" CvType="CheckBox" DesignTimeRectangle="975, 565, 14, 14" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl parentid='page-Address' tag='INPUT' type='checkbox' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-Address' tag='INPUT' type='checkbox' class='input-with-feedback' aaname='' /&gt;" Guid="5e076619-251a-4280-a5ac-38f7414866c7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New Address' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="41f56d72-e5a9-4e5c-bdf6-0c99eee6216e" CvTextArea="996, 564, 155, 13" CvTextArgument="Preferred Billing Address" CvType="Text" DesignTimeRectangle="997, 562, 154, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl class='label-area' parentid='page-Address' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='label-area' parentid='page-Address' tag='SPAN' type='' aaname='Preferred Billing Address' check:innerText='Preferred Billing Address' /&gt;" Guid="2d7610bd-f8a3-43d5-9399-2d5b2ef381ab" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2b94ed55d2b89605d513f52748e8c0d8.png" xmlns="">0BufDWdS_g0e8Y46NpzKInQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

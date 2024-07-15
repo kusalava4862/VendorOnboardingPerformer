@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Type Into 'Postal Code'",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "8Vf6PwiVck2SzSGDbcqYYw",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/8Vf6PwiVck2SzSGDbcqYYw",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/dDohydL7oU6LNQ1P4kLiEQ",
+  "Created": "2024-07-15T03:50:43.4235944Z",
+  "Updated": "2024-07-15T03:50:43.4235944Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

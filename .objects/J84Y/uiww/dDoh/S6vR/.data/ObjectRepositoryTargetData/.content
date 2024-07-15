@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Gwsl-iLgR0qyy6jsV-ALsg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/supplier/Sample%20Supplier%20Name" CVScreenId="0f961aa6-ac1d-4674-8470-891dd7a247bd" CvElementArea="572, 358, 18, 18" CvType="CheckBox" DesignTimeRectangle="574, 360, 14, 14" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl class='input-with-feedback' idx='2' parentid='supplier-settings_tab' tag='INPUT' type='checkbox' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-with-feedback' aaname='' parentid='supplier-settings_tab' tag='INPUT' type='checkbox' /&gt;" Guid="fc7c65d3-b7c8-4a4f-9eb4-6a6d420df6b6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sample Supplier Name - Sample Supplier Name' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0f961aa6-ac1d-4674-8470-891dd7a247bd" CvTextArea="595, 360, 366, 15" CvTextArgument="Allow Purchase Invoice Creation Without Purchase Receipt" CvType="Text" DesignTimeRectangle="596, 357, 365, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Allow Purchase Invoice Creation Without Purchase Receipt' class='label-area' parentid='supplier-settings_tab' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Allow Purchase Invoice Creation Without Purchase Receipt' class='label-area' parentid='supplier-settings_tab' tag='SPAN' type='' check:innerText='Allow Purchase Invoice Creation Without Purchase Receipt' /&gt;" Guid="b643b832-306a-4102-965d-285ba013d45d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="26233d5d457fabd13044a145f3abf51a.png" xmlns="">0HRhbDd6cmke6gtWCgZj1lA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Supplier Details Screen",
+  "Type": "Screen",
+  "Id": "dDohydL7oU6LNQ1P4kLiEQ",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/dDohydL7oU6LNQ1P4kLiEQ",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/uiwwVs9pXUuRNSBNvHUrrw",
+  "Created": "2024-07-15T03:27:16.8923205Z",
+  "Updated": "2024-07-15T03:28:43.1047872Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
