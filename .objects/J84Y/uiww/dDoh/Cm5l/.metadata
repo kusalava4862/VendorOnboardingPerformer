@@ -1,0 +1,16 @@
+﻿{
+  "Name": "EmailPrimary",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "Cm5lDjtUtkyRy2bd1yJArA",
+  "Reference": "F5Zsp2T990mpxSexIPd5BA/Cm5lDjtUtkyRy2bd1yJArA",
+  "ParentRef": "F5Zsp2T990mpxSexIPd5BA/dDohydL7oU6LNQ1P4kLiEQ",
+  "Created": "2024-07-16T03:30:28.6911926Z",
+  "Updated": "2024-07-16T03:31:25.9553734Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

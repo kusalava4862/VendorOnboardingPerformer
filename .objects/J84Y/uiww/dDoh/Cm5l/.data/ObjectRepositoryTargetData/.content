@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gkgdLxafHU-5ccR8aIc6ew" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://erp.skillrpa.com/app/contact/new-contact-uvhcmncbiw" DesignTimeRectangle="1341, 323, 14, 14" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl parentid='page-Contact' tag='INPUT' type='checkbox' placeholder='Is Primary' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='page-Contact' tag='INPUT' type='checkbox' placeholder='Is Primary' class='input-with-feedback input-sm' aaname='' /&gt;" Guid="e46736cf-fac0-4959-807d-7423bf0f738f" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://erp.skillrpa.com/app/contact/new-contact-*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f8ccc65cd7593bf050b077fc7f3d7647.png" xmlns="">0ruLjyBmcz0uoE87PaYCW7w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
